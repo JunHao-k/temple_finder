@@ -3,11 +3,11 @@ let showAllTemples = async () => {
     let response = await axios.get('./data/templeList.json')
     let templeList = response.data
     let map = createMap(sgLat , sgLng)
-    // let templeLayer = L.layerGroup()
+    let templeLayer = L.layerGroup()
 
 
     let templeCluster = L.markerClusterGroup();
-    templeCluster.addTo(map)
+    templeCluster.addTo(templeLayer)
     
     for(i = 0; i < 350; i++){
         let templeCoordinates = [templeList[String(i)].lat , templeList[String(i)].lng]
