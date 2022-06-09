@@ -1,14 +1,16 @@
 
-window.addEventListener('DOMContentLoaded' , async () => {
-    let map = createMap(sgLat , sgLng);
+// init()
 
+let map = createMap(sgLat , sgLng);
+
+window.addEventListener('DOMContentLoaded' , async () => {
+    
     let templeLayer = L.layerGroup()
     templeLayer.addTo(map)
     let getTempleCluster = await showAllTemples()
     getTempleCluster.addTo(templeLayer)
 
     let yueLaoLayer = L.layerGroup()
-    yueLaoLayer.addTo(map)
     let getYueLaoMarker = yueLaoMarker();
     getYueLaoMarker.addTo(yueLaoLayer)
 
@@ -19,3 +21,4 @@ window.addEventListener('DOMContentLoaded' , async () => {
 
     L.control.layers(baseLayers , {}).addTo(map)
 })
+
