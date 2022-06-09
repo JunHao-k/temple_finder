@@ -1,10 +1,20 @@
 
 window.addEventListener('DOMContentLoaded' , async () => {
-    let map = createMap();
+    let map = createMap(sgLat , sgLng);
+
+    let templeLayer = L.layerGroup()
+    templeLayer.addTo(map)
+    let getTempleCluster = await showAllTemples()
+    getTempleCluster.addTo(templeLayer)
+
+    let yueLaoLayer = L.layerGroup()
+    yueLaoLayer.addTo(map)
+    let getYueLaoMarker = yueLaoMarker();
+    getYueLaoMarker.addTo(yueLaoLayer)
 
     let baseLayers = {
         "Show all temples": templeLayer,
-        "For Relationships": rsTemple
+        "For Relationships": yueLaoLayer
     }
 
     L.control.layers(baseLayers , {}).addTo(map)
