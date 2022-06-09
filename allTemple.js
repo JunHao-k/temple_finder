@@ -22,8 +22,8 @@ let showAllTemples = async () => {
         templeMarker.addTo(templeCluster)
         
     }
-    // let baseLayers = {
-    //     "Show temples": 
-    // }
+    let baseLayers = {
+        "Show temples": templeLayer
+    }
     return map
 }
