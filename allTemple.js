@@ -2,7 +2,7 @@
 let showAllTemples = async () => {
     let response = await axios.get('./data/templeList.json')
     let templeList = response.data
-    let map = createMap(sgLat , sgLng)
+    // let map = createMap(sgLat , sgLng)
     let templeLayer = L.layerGroup()
 
 
@@ -20,10 +20,12 @@ let showAllTemples = async () => {
             <h2>${english_name}</h2>
         `)
         templeMarker.addTo(templeCluster)
-        
     }
-    let baseLayers = {
-        "Show temples": templeLayer
-    }
-    return map
+
+    let rsTemple = L.marker([1.284284 , 103.849579]).bindPopup(`
+        <h1>粤海清庙</h1>
+        <h2>Yueh Hai Ching Temple</h2>
+    `).addTo(templeLayer)
+
+    return templeLayer
 }
