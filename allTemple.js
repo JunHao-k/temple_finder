@@ -1,4 +1,3 @@
-
 let showAllTemples = async () => {
     let response = await axios.get('./data/templeList.json')
     let templeList = response.data
@@ -21,7 +20,7 @@ let showAllTemples = async () => {
         let english_name = templeList[String(i)].engName 
         
         let templeMarker = L.marker(templeCoordinates , {icon: templeIcon}).addEventListener('click' , 
-        () => {findVegetarian(templeCoordinates[0] , templeCoordinates[1] , templeCoordinates)}) 
+        () => {findVegetarian(templeCoordinates[0] , templeCoordinates[1])}) 
         
         templeMarker.bindPopup(`
             <h1>${chinese_name}</h1>
