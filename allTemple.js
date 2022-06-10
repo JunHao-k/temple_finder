@@ -2,7 +2,6 @@
 let showAllTemples = async () => {
     let response = await axios.get('./data/templeList.json')
     let templeList = response.data
-    // let vCheck = false
     
     let templeLayer = L.layerGroup()
     templeLayer.addTo(map)
@@ -11,12 +10,8 @@ let showAllTemples = async () => {
 
     let templeIcon = L.icon({
         iconUrl: './data/chineseTemple.png',
-        // shadowUrl: './data/chineseTemple.png',
-    
         iconSize:     [38, 50], // size of the icon
-        // shadowSize:   [50, 64], // size of the shadow
         iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-        // shadowAnchor: [4, 62],  // the same for the shadow
         popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
     });
     
@@ -36,6 +31,5 @@ let showAllTemples = async () => {
         templeMarker.addTo(templeCluster)
     }
     templeCluster.addTo(templeLayer)
-    // console.log(vCheck)
     return templeLayer
 }

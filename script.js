@@ -1,8 +1,5 @@
 
-let map = createMap(sgLat , sgLng);
-// let getAllTemples = ""
-// let getYueLaoLayer = ""
-
+// let map = createMap(sgLat , sgLng);
 
 window.addEventListener('DOMContentLoaded' , async () => {
     
