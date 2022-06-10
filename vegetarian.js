@@ -1,6 +1,8 @@
-let findVegetarian = async (lat , lng) => {
+let findVegetarian = async (lat , lng , templeLocation) => {
     let nearbyVeg = await searchFourSquare(lat , lng , "vegetarian")
     
+    // let otherTemples = await showAllTemples()
+    // otherTemples.clearLayers()
     console.log(nearbyVeg)
     for(vegLocation of nearbyVeg.results){
         let vegLat = vegLocation.geocodes.main.latitude
@@ -8,4 +10,5 @@ let findVegetarian = async (lat , lng) => {
      
         L.marker([vegLat,vegLng]).addTo(map)
     }
+    
 }
