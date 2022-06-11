@@ -21,11 +21,6 @@ window.addEventListener('DOMContentLoaded' , async () => {
     baseLayers = controlLayers(getYueLaoLayer[1] , getYueLaoLayer[0] , baseLayers)
 
     L.control.layers(baseLayers , {}).addTo(map)
-    // let baseLayers = {
-    //     "Show all temples": getAllTemples,
-    //     "For Relationships": getYueLaoLayer
-    // }
-
 })
 
 

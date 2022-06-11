@@ -21,12 +21,12 @@ let showAllTemples = async () => {
         let english_name = templeList[String(i)].engName 
         
         let templeMarker = L.marker(templeCoordinates , {icon: templeIcon}).addEventListener('click' , () => {
-            if(map.hasLayer(getAlltemples)){
-                alert("Function is triggered")
+            findVegetarian(templeCoordinates[0] , templeCoordinates[1] , chinese_name , english_name)
+            if(map.hasLayer(baseLayers["with veggies"])){
+                baseLayers["with veggies"].clearLayers()
             }
         }) 
 
-        /*{findVegetarian(templeCoordinates[0] , templeCoordinates[1])}*/
         templeMarker.bindPopup(`
             <h1>${chinese_name}</h1>
             <h2>${english_name}</h2>
