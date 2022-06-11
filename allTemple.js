@@ -5,6 +5,7 @@ let showAllTemples = async () => {
     let templeLayer = L.layerGroup()
     templeLayer.addTo(map)
 
+
     let templeCluster = L.markerClusterGroup();
 
     let templeIcon = L.icon({
@@ -19,9 +20,13 @@ let showAllTemples = async () => {
         let chinese_name = templeList[String(i)].chiName 
         let english_name = templeList[String(i)].engName 
         
-        let templeMarker = L.marker(templeCoordinates , {icon: templeIcon}).addEventListener('click' , 
-        () => {findVegetarian(templeCoordinates[0] , templeCoordinates[1])}) 
-        
+        let templeMarker = L.marker(templeCoordinates , {icon: templeIcon}).addEventListener('click' , () => {
+            if(map.hasLayer(getAlltemples)){
+                alert("Function is triggered")
+            }
+        }) 
+
+        /*{findVegetarian(templeCoordinates[0] , templeCoordinates[1])}*/
         templeMarker.bindPopup(`
             <h1>${chinese_name}</h1>
             <h2>${english_name}</h2>
@@ -30,5 +35,5 @@ let showAllTemples = async () => {
         templeMarker.addTo(templeCluster)
     }
     templeCluster.addTo(templeLayer)
-    return templeLayer
+    return [templeLayer , "Show all temples"]
 }

@@ -7,6 +7,6 @@ let showYueLao = () => {
         <h2>Yueh Hai Ching Temple</h2>
     `).addTo(yueLaoLayer)
 
-    return yueLaoLayer
+    return [yueLaoLayer , "For Relationships"]
 }
 

@@ -8,3 +8,19 @@ let createMap = () => {
     return map
 }
 let map = createMap();
+
+let baseLayers = {
+    // "Show all temples": inputLayer,
+    // "For Relationships": inputlayer
+}
+
+let controlLayers = (layerTitle , inputLayer , base) => {
+    
+    // let getLayer = inputLayer
+    // let getYueLaoLayer = inputLayer
+    base[layerTitle] = inputLayer
+    return base
+}
+
+
+
