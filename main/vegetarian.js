@@ -16,9 +16,8 @@ let findVegetarian = async (lat , lng , chi , eng) => {
         <h2>${eng}</h2>
     `).addTo(vegLayer)
 
-    console.log(nearbyVeg.results)
+    // console.log(nearbyVeg.results)
     for(vegLocation of nearbyVeg.results){
-        // console.log(vegLocation.location.name)
 
         let vegIcon = generateIcon('../images/veg.png')
 
