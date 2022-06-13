@@ -25,8 +25,11 @@ let findVegetarian = async (lat , lng , chi , eng) => {
         let vegLat = vegLocation.geocodes.main.latitude
         let vegLng = vegLocation.geocodes.main.longitude
         let address = `<h1>${vegLocation.name}</h1>
-        <h2>${vegLocation.location.address} ${vegLocation.location.address_extended} 
-        ${vegLocation.location.postcode}</h2>`
+        <p>
+            ${vegLocation.location.address} 
+            ${vegLocation.location.address_extended ? vegLocation.location.address_extended : ""} 
+            ${vegLocation.location.postcode ? vegLocation.location.postcode : ""}
+        </p>`
 
         let thisVegRest = L.marker([vegLat,vegLng] , {icon: vegIcon}).bindPopup(address)
 
