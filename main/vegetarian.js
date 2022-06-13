@@ -1,5 +1,5 @@
 let findVegetarian = async (lat , lng , chi , eng) => {
-    let nearbyVeg = await searchFourSquare(lat , lng , "vegetarian")
+    let nearbyVeg = await searchFourSquare(lat , lng , "vegetarian" , 13377)
     
     let vegLayer = L.layerGroup()
     let temple_layer = baseLayers["Show all temples"]
@@ -18,11 +18,18 @@ let findVegetarian = async (lat , lng , chi , eng) => {
 
     console.log(nearbyVeg.results)
     for(vegLocation of nearbyVeg.results){
+        // console.log(vegLocation.location.name)
 
         let vegIcon = generateIcon('../images/veg.png')
 
         let vegLat = vegLocation.geocodes.main.latitude
         let vegLng = vegLocation.geocodes.main.longitude
-        L.marker([vegLat,vegLng] , {icon: vegIcon}).addTo(vegLayer)
+        let address = `<h1>${vegLocation.name}</h1>
+        <h2>${vegLocation.location.address} ${vegLocation.location.address_extended} 
+        ${vegLocation.location.postcode}</h2>`
+
+        let thisVegRest = L.marker([vegLat,vegLng] , {icon: vegIcon}).bindPopup(address)
+
+        thisVegRest.addTo(vegLayer)
     }
 }
