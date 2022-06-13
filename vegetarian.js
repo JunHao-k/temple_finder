@@ -9,8 +9,9 @@ let findVegetarian = async (lat , lng , chi , eng) => {
         map.addLayer(vegLayer)
         baseLayers["with veggies"] = vegLayer
     }
-
+    console.log(nearbyVeg.results)
     for(vegLocation of nearbyVeg.results){
+
         L.marker([lat , lng]).bindPopup(`
             <h1>${chi}</h1>
             <h2>${eng}</h2>
