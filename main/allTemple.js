@@ -5,15 +5,10 @@ let showAllTemples = async () => {
     let templeLayer = L.layerGroup()
     templeLayer.addTo(map)
 
-
     let templeCluster = L.markerClusterGroup();
 
-    let templeIcon = L.icon({
-        iconUrl: './data/chineseTemple.png',
-        iconSize:     [38, 50], // size of the icon
-        iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-        popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-    });
+    let templeIcon = generateIcon('../images/chineseTemple.png')
+
     
     for(i = 0; i < 350; i++){
         let templeCoordinates = [templeList[String(i)].lat , templeList[String(i)].lng]

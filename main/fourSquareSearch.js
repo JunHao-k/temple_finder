@@ -7,8 +7,8 @@ let searchFourSquare = async (lat , lng , query) => {
         'params':{
             'll': String(lat) + "," + String(lng),
             'query': query,
-            'radius': 4000,
-            'limit': 10
+            'radius': 2000,
+            'limit': 4
         },
         'headers':{
             'Accept': 'application/json', 
