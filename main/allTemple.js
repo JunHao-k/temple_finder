@@ -15,9 +15,10 @@ let showAllTemples = async () => {
         let chinese_name = templeList[String(i)].chiName 
         let english_name = templeList[String(i)].engName 
         
+        getWeatherData(templeCoordinates)
+
         let templeMarker = L.marker(templeCoordinates , {icon: templeIcon}).addEventListener('click' , () => {
             findVegetarian(templeCoordinates[0] , templeCoordinates[1] , chinese_name , english_name)
-            getWeatherData(templeCoordinates)
             if(map.hasLayer(baseLayers["with veggies"])){
                 baseLayers["with veggies"].clearLayers()
             }
