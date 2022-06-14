@@ -15,19 +15,35 @@ let showAllTemples = async () => {
         let chinese_name = templeList[String(i)].chiName 
         let english_name = templeList[String(i)].engName 
         
-        getWeatherData(templeCoordinates)
-
-        let templeMarker = L.marker(templeCoordinates , {icon: templeIcon}).addEventListener('click' , () => {
+        //[status , temperature , min_temp , max_temp , temp_feels]
+        // let status, temperature, minTemp , maxTemp , tempFeels;
+        let status_arr = await getWeatherData(templeCoordinates)
+        // console.log(status_arr)
+        // [status , temperature, minTemp , maxTemp , tempFeels] = status_arr
+        // console.log(status_arr)
+        let templeMarker = L.marker(templeCoordinates , {icon: templeIcon}).bindPopup(`
+            <div>
+                <h1>${chinese_name}</h1>
+                <h2>${english_name}</h2>
+            </div>
+            <div>
+                <h1>${status_arr[1]}</h1>
+                <h2>${status_arr[0]}</h2>
+                <table>
+                    <tr>Highest: ${status_arr[3]}</tr>
+                    <tr>Lowest: ${status_arr[2]}</tr>
+                    <tr>Feels like: ${status_arr[4]}</tr>
+                </table>
+            </div>
+        `)
+        
+        templeMarker.addEventListener('click' , () => {
             findVegetarian(templeCoordinates[0] , templeCoordinates[1] , chinese_name , english_name)
             if(map.hasLayer(baseLayers["with veggies"])){
                 baseLayers["with veggies"].clearLayers()
             }
         }) 
 
-        templeMarker.bindPopup(`
-            <h1>${chinese_name}</h1>
-            <h2>${english_name}</h2>
-        `)
         
         templeMarker.addTo(templeCluster)
     }
