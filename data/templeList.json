@@ -11,7 +11,8 @@
     "lng": "103.740074",
     "chiName": "爱民宫",
     "engName": "Aik Beng Keng",
-    "main-deity": ""
+    "location": "Bukit Batok",
+    "main-deity": ["Ganying Zun Wang 感应尊王"]
   },
   "2": {
     "lat": "1.311550",
@@ -25,6 +26,7 @@
     "lng": "103.838722",
     "chiName": "宏茂桥联合庙",
     "engName": "Ang Mo Kio Joint Temple",
+    "location": "Ang Mo Kio",
     "main-deity": ""
   },
   "4": {
@@ -39,7 +41,8 @@
     "lng": "103.774078",
     "chiName": "木山圣母宫",
     "engName": "Bak Sua Siah Boo Temple",
-    "main-deity": ""
+    "location": "Bukit Panjang",
+    "main-deity": ["Heavenly Empress(Mazu) 天后圣母(妈祖)"]
   },
   "6": {
     "lat": "1.273349",
@@ -67,7 +70,8 @@
     "lng": "103.773506",
     "chiName": "天竺山毗卢寺",
     "engName": "Beeh Low See Buddhist Temple",
-    "main-deity": ""
+    "location": "Bukit Timah",
+    "main-deity": ["Mahavairocana 毗卢遮那佛"]
   },
   "10": {
     "lat": "1.316161",
@@ -81,14 +85,16 @@
     "lng": "103.943542",
     "chiName": "德国姑娘/拿督姑娘庙",
     "engName": "Berlin Heiligtum / German Girl Shrine",
-    "main-deity": ""
+    "location": "Pulau Ubin",
+    "main-deity": ["Datuk Gu Niang 拿督姑娘"]
   },
   "12": {
     "lat": "1.345712",
     "lng": "103.843315",
     "chiName": "碧山庙",
     "engName": "Bishan Temple",
-    "main-deity": ""
+    "location": "Bishan",
+    "main-deity": ["Ci Hang Zhen Ren (Guanyin) 慈航真人（观音"]
   },
   "13": {
     "lat": "1.312404",
@@ -109,6 +115,7 @@
     "lng": "103.751152",
     "chiName": "武吉巴督联合宫",
     "engName": "Bukit Batok Joint Temple",
+    "location": "Bukit Batok",
     "main-deity": ""
   },
   "16": {
@@ -123,13 +130,15 @@
     "lng": "103.774521",
     "chiName": "武吉知马大伯公宫",
     "engName": "Bukit Timah Tua Pek Kong Temple",
-    "main-deity": ""
+    "location": "Bukit Timah",
+    "main-deity": ["Da Bo Gong (Tua Pek Kong) 大伯公"]
   },
   "18": {
     "lat": "1.328454",
     "lng": "103.919167",
     "chiName": "菜市联合宫",
     "engName": "Chai Chee United Temple",
+    "location": "Bedok",
     "main-deity": ""
   },
   "19": {
@@ -137,7 +146,8 @@
     "lng": "103.814278",
     "chiName": "齐天坛",
     "engName": "Chai Tien Tua",
-    "main-deity": ""
+    "location": "Bukit Merah",
+    "main-deity": ["Xuan Tian Shangdi 玄天上帝"]
   },
   "20": {
     "lat": "1.311091",
@@ -207,7 +217,8 @@
     "lng": "103.954407",
     "chiName": "济云阁",
     "engName": "Chee Hoon Kog Moral Promotion Society",
-    "main-deity": ""
+    "location": "Changi",
+    "main-deity": ["Ji Gong 济公"]
   },
   "30": {
     "lat": "1.443550",
@@ -263,7 +274,8 @@
     "lng": "103.857101",
     "chiName": "积善堂",
     "engName": "Chek Sian Tng",
-    "main-deity": ""
+    "location": "Ang Mo Kio",
+    "main-deity": ["Guanyin 观音"]
   },
   "38": {
     "lat": "1.326309",
@@ -291,6 +303,7 @@
     "lng": "103.774078",
     "chiName": "正华慈圣宫",
     "engName": "Cheng Hwa Cher Siah Temple",
+    "location": "Bukit Panjang",
     "main-deity": ""
   },
   "42": {
@@ -298,13 +311,15 @@
     "lng": "103.949036",
     "chiName": "石雾洞",
     "engName": "Cheo Bu Tong",
-    "main-deity": ""
+    "location": "Bedok",
+    "main-deity": ["Zhang Gong Shengjun 张公圣君"]
   },
   "43": {
     "lat": "1.335576",
     "lng": "103.949036",
     "chiName": "石林晋山联合宫",
     "engName": "Cheo Lim Chin Sun Lian Hup Keng",
+    "location": "Bedok",
     "main-deity": ""
   },
   "44": {
@@ -326,7 +341,8 @@
     "lng": "103.774078",
     "chiName": "慈莲堂",
     "engName": "Cher Lian Tong Buddhist Temple",
-    "main-deity": ""
+    "location": "Bukit Panjang",
+    "main-deity": ["Guanyin 观音菩萨"]
   },
   "47": {
     "lat": "1.433824",
@@ -347,7 +363,8 @@
     "lng": "103.828781",
     "chiName": "正龙宫玄江殿",
     "engName": "Chia Leng Kong Heng Kang Tian",
-    "main-deity": ""
+    "location": "Bukit Merah",
+    "main-deity": ["Xuan Tian Shangdi 玄天上帝"]
   },
   "50": {
     "lat": "1.352888",
@@ -361,6 +378,7 @@
     "lng": "103.815697",
     "chiName": "真龙宫",
     "engName": "Chin Leng Keng",
+    "location": "Bukit Merah",
     "main-deity": ""
   },
   "52": {
@@ -368,35 +386,40 @@
     "lng": "103.815697",
     "chiName": "真龙宫万仙庙",
     "engName": "Chin Leng Keng Ban Sian Beo",
-    "main-deity": ""
+    "location": "Bukit Merah",
+    "main-deity": ["Wan Tian Zhu Shuai 万天主帅"]
   },
   "53": {
     "lat": "1.288210",
     "lng": "103.815697",
     "chiName": "真龙宫真人宫",
     "engName": "Chin Leng Keng Chin Lin Keng",
-    "main-deity": ""
+    "location": "Bukit Merah",
+    "main-deity": ["Bao Sheng Da Di (God of Medicine) 保生大帝"]
   },
   "54": {
     "lat": "1.288210",
     "lng": "103.815697",
     "chiName": "真龙宫介谷殿",
     "engName": "Chin Leng Keng Kai Kok Tian",
-    "main-deity": ""
+    "location": "Bukit Merah",
+    "main-deity": ["Wugu Xian Di 五谷仙帝"]
   },
   "55": {
     "lat": "1.288210",
     "lng": "103.815697",
     "chiName": "真龙宫龙山亭",
     "engName": "Chin Leng Keng Leng San Teng",
-    "main-deity": ""
+    "location": "Bukit Merah",
+    "main-deity": ["Da Bo Gong (Tua Pek Kong) 大伯公"]
   },
   "56": {
     "lat": "1.335576",
     "lng": "103.949036",
     "chiName": "普平寺善联山宫",
     "engName": "Chin Pin Tze San Lian Sun",
-    "main-deity": ""
+    "location": "Bedok",
+    "main-deity": ["Si Zhou Wen Fo 泗洲文佛" , "Shan Cai Tongzi 善才童子(善财童子)"]
   },
   "57": {
     "lat": "1.452336",
@@ -466,7 +489,16 @@
     "lng": "103.843460",
     "chiName": "聚圣庙",
     "engName": "Chu Sheng Temple",
-    "main-deity": ""
+    "location": "Ang Mo Kio",
+    "main-deity": [
+      "Shi Fu Wang Ye 施府王爷",
+      "Lord Lin 林府大人",
+      "Lord Xiao 萧府大人",
+      "Zhu Fu Da Ren 朱府大人",
+      "Dong Gong Zhenren 董公真人",
+      "Qingshui Zu Shi 清水祖师",
+      "Fa Zu Sheng Jun 法祖圣君"
+    ]
   },
   "67": {
     "lat": "1.434725",
@@ -578,7 +610,12 @@
     "lng": "103.844315",
     "chiName": "凤山堂",
     "engName": "Feng Shan Tang",
-    "main-deity": ""
+    "location": "Ang Mo Kio",
+    "main-deity": [
+      "Lord Yu 余府大人",
+      "Lord Zhong 钟府大人",
+      "Lord Yang 杨府大人"
+    ]
   },
   "83": {
     "lat": "1.317986",
@@ -592,7 +629,11 @@
     "lng": "103.853630",
     "chiName": "芋峡塘福德宫",
     "engName": "Fu Hup Thong Fook Tak Kung",
-    "main-deity": ""
+    "location": "Balestier", 
+    "main-deity": [
+      "Tu Di Kong (Fu De Zheng Shen) 土地公（福德正神）",
+      "Tu Di Po (土地婆)"
+    ]
   },
   "85": {
     "lat": "1.347546",
@@ -634,7 +675,8 @@
     "lng": "103.852730",
     "chiName": "梧槽大伯公庙",
     "engName": "Goh Chor Tua Pek Kong Temple",
-    "main-deity": ""
+    "location": "Balestier",
+    "main-deity": ["Da Bo Gong(Tua Pek Kong) 大伯公"]
   },
   "91": {
     "lat": "1.433824",
@@ -662,6 +704,7 @@
     "lng": "103.740074",
     "chiName": "桂林联合庙",
     "engName": "Guilin Combined Temple",
+    "location": "Bukit Batok",
     "main-deity": ""
   },
   "95": {
@@ -718,14 +761,16 @@
     "lng": "103.919167",
     "chiName": "福灵宫",
     "engName": "Hock Leng Keng",
-    "main-deity": ""
+    "location": "Bedok",
+    "main-deity": ["Xuan Tian Shang Di 玄天上帝"]
   },
   "103": {
     "lat": "1.328454",
     "lng": "103.919167",
     "chiName": "福山亭",
     "engName": "Hock San Teng",
-    "main-deity": ""
+    "location": "Bedok",
+    "main-deity": ["Da Bo Gong(Tua Pek Kong) 大伯公"]
   },
   "104": {
     "lat": "1.314630",
@@ -746,14 +791,16 @@
     "lng": "103.832687",
     "chiName": "福德堂 (龟屿大伯公)",
     "engName": "Hock Teck Tong",
-    "main-deity": ""
+    "location": "Bukit Merah",
+    "main-deity": ["Da Bo Gong(Tua Pek Kong) 大伯公"]
   },
   "107": {
     "lat": "1.340296",
     "lng": "103.757072",
     "chiName": "福通联合庙",
     "engName": "Hock Thong Temple",
-    "main-deity": ""
+    "location": "Bukit Batok",
+    "main-deity": ["Grandmaster Zhenkong 真空祖师" , "Guang Ze Zun Wang 广泽尊王"]
   },
   "108": {
     "lat": "1.326309",
@@ -795,7 +842,8 @@
     "lng": "103.757072",
     "chiName": "裕廊凤山寺",
     "engName": "Hong San See (Jurong)",
-    "main-deity": ""
+    "location": "Bukit Batok",
+    "main-deity": ["Guangze Zunwang 广泽尊王"]
   },
   "114": {
     "lat": "1.434767",
@@ -851,7 +899,8 @@
     "lng": "103.858307",
     "chiName": "云峰天后庙",
     "engName": "Hoon Hong Tian Haw Boo",
-    "main-deity": ""
+    "location": "Ang Mo Kio",
+    "main-deity": ["Tian Hou Niang Niang(Mazu) 天后娘娘(妈祖)"]
   },
   "122": {
     "lat": "1.322264",
@@ -871,8 +920,9 @@
     "lat": "1.365609",
     "lng": "103.858307",
     "chiName": "云峰古庙及合兴光庙",
-    "engName": "Hoong Hong Koon Beo &amp; Hup Heng Kwang Beo",
-    "main-deity": ""
+    "engName": "Hoong Hong Koon Beo & Hup Heng Kwang Beo",
+    "location":"Ang Mo Kio",
+    "main-deity": ["Da Bo Gong(Tua Pek Kong) 大伯公"]
   },
   "125": {
     "lat": "1.354998",
@@ -942,7 +992,8 @@
     "lng": "103.740059",
     "chiName": "集声宫金全法坛",
     "engName": "Ji Sheng Gong Kim Chuan Whuap Tuah",
-    "main-deity": ""
+    "location": "Bukit Batok",
+    "main-deity": ["Dong Gong Zhenren 董公真人" , "Lords Zhu Lin Xiao 朱林萧府大人公"]
   },
   "135": {
     "lat": "1.452861",
@@ -970,7 +1021,8 @@
     "lng": "103.949402",
     "chiName": "锦茂村水美宫",
     "engName": "Jin Mao Cun Shui Mei Gong",
-    "main-deity": ""
+    "location": "Bedok",
+    "main-deity": ["Da Bo Gong(Tua Pek Kong) 大伯公"]
   },
   "139": {
     "lat": "1.367224",
@@ -1019,7 +1071,8 @@
     "lng": "103.828484",
     "chiName": "开山庙",
     "engName": "Kai San Temple",
-    "main-deity": ""
+    "location": "Bukit Merah",
+    "main-deity": ["Kaishan Sheng Hou 开山圣侯"]
   },
   "146": {
     "lat": "1.313970",
@@ -1089,7 +1142,8 @@
     "lng": "103.838722",
     "chiName": "金英堂",
     "engName": "Kim Eang Tong",
-    "main-deity": ""
+    "location":"Ang Mo Kio",
+    "main-deity": ["Grand Master Jin Ying 金英祖师"]
   },
   "156": {
     "lat": "1.341411",
@@ -1110,14 +1164,16 @@
     "lng": "103.827324",
     "chiName": "金兰庙",
     "engName": "Kim Lan Beo",
-    "main-deity": ""
+    "location": "Bukit Merah",
+    "main-deity": ["Qing Shui Zu Shi / 清水祖师 （祖师公）"]
   },
   "159": {
     "lat": "1.315106",
     "lng": "103.927620",
     "chiName": "金山寺斗山宫",
     "engName": "Kim San Tze",
-    "main-deity": ""
+    "location": "Bedok",
+    "main-deity": ["Nine Emperor Gods (jiu huang dadi) 九皇大帝/九皇爷"]
   },
   "160": {
     "lat": "1.314033",
@@ -1152,14 +1208,16 @@
     "lng": "103.838722",
     "chiName": "宏茂桥檺林宫",
     "engName": "Kong Lim Kong",
-    "main-deity": ""
+    "location":"Ang Mo Kio",
+    "main-deity": ["Lords Zhu Xing & Li 朱邢李三王府大人"]
   },
   "165": {
     "lat": "1.361516",
     "lng": "103.835815",
     "chiName": "光明山普觉禅寺",
     "engName": "Kong Meng San Phor Kark See Monastery",
-    "main-deity": ""
+    "location": "Bishan",
+    "main-deity": ["Sakyamuni Buddha (Sage of the Sakya) 释迦牟尼"]
   },
   "166": {
     "lat": "1.326309",
@@ -1180,7 +1238,8 @@
     "lng": "103.949036",
     "chiName": "勿洛檺林宫",
     "engName": "Kuah Na Keng",
-    "main-deity": ""
+    "location": "Bedok",
+    "main-deity": ["Lords Zhu Xing & Li 朱邢李三王府大人"]
   },
   "169": {
     "lat": "1.312480",
@@ -1208,7 +1267,8 @@
     "lng": "103.848938",
     "chiName": "宽济堂念佛社",
     "engName": "Kuang Chee Tng Buddhist Association",
-    "main-deity": ""
+    "location": "Balestier",
+    "main-deity": ["Sakyamuni Buddha (Sage of the Sakya) 释迦牟尼"]
   },
   "173": {
     "lat": "1.223224",
@@ -1250,14 +1310,16 @@
     "lng": "103.821877",
     "chiName": "雷音寺",
     "engName": "Lei Yin Temple",
-    "main-deity": ""
+    "location": "Bukit Merah",
+    "main-deity": ["Xi Tian Niang Niang 西天娘娘"]
   },
   "179": {
     "lat": "1.327130",
     "lng": "103.847893",
     "chiName": "灵隐寺",
     "engName": "Leng Ern Jee",
-    "main-deity": ""
+    "location": "Balestier",
+    "main-deity": ["Ji Gong Huo Fo 济公活佛" , "Fu You Di Jun (Lu Dong Bin) 孚佑帝君 (呂洞宾)"]
   },
   "180": {
     "lat": "1.380539",
@@ -1271,14 +1333,16 @@
     "lng": "103.838722",
     "chiName": "龙山岩斗母宫",
     "engName": "Leng San Giam Dou Mu Gong",
-    "main-deity": ""
+    "location":"Ang Mo Kio",
+    "main-deity": ["Zhang Gong Sheng Jun 张公圣君" , "5th Emperor God 九皇五帝"]
   },
   "182": {
     "lat": "1.290098",
     "lng": "103.815094",
     "chiName": "麟山亭北极宫",
     "engName": "Leng San Teng (Lin San Teng)",
-    "main-deity": ""
+    "location": "Bukit Merah",
+    "main-deity": ["Xuan Tian Shangdi 玄天上帝"]
   },
   "183": {
     "lat": "1.391533",
@@ -1334,7 +1398,8 @@
     "lng": "103.751190",
     "chiName": "龙凤洞云南大伯公",
     "engName": "Ling Hong Tong Hoon Lam Tua Pek Kong",
-    "main-deity": ""
+    "location": "Bukit Batok",
+    "main-deity": ["Wu Gong Zhen Xian 吴公真仙" , "Da Bo Gong(Tua Pek Kong) 大伯公"]
   },
   "191": {
     "lat": "1.313808",
@@ -1355,6 +1420,7 @@
     "lng": "103.844315",
     "chiName": "六巡三合庙",
     "engName": "Liuxun Sanhemiao",
+    "location":"Ang Mo Kio",
     "main-deity": ""
   },
   "194": {
@@ -1362,7 +1428,8 @@
     "lng": "103.740074",
     "chiName": "龙显山宫",
     "engName": "Long Xian Shan Gong",
-    "main-deity": ""
+    "location": "Bukit Batok",
+    "main-deity": ["Five Lords (Jin San Liu Li Luo) 五王府大人 (金，叁，刘，李，罗）"]
   },
   "195": {
     "lat": "1.352952",
@@ -1376,14 +1443,18 @@
     "lng": "103.844315",
     "chiName": "龙须岩金水馆",
     "engName": "Longxuyan Jinshuiguan",
-    "main-deity": ""
+    "location":"Ang Mo Kio",
+    "main-deity": ["Da De Chan Shi 大德禅师" , 
+      "Pu An Fo Zu (Qing Shui Zu Shi) 普庵佛祖(清水祖师)"
+    ]
   },
   "197": {
     "lat": "1.371132",
     "lng": "103.969727",
     "chiName": "洛陽大伯公宫",
     "engName": "Loyang Tua Pek Kong Temple",
-    "main-deity": ""
+    "location": "Changi",
+    "main-deity": ["Da Bo Gong (Tua Pek Kong) 大伯公"]
   },
   "198": {
     "lat": "1.391533",
@@ -1460,7 +1531,8 @@
     "lng": "103.833328",
     "chiName": "黑桥头玉皇殿",
     "engName": "Or Kio Tow Geok Hong Tian",
-    "main-deity": ""
+    "location": "Bukit Merah",
+    "main-deity": ["Jade Emperor (Yu Huang Da Di) 玉皇大帝"]
   },
   "209": {
     "lat": "1.284166",
@@ -1488,7 +1560,8 @@
     "lng": "103.843376",
     "chiName": "碧山亭福德祠",
     "engName": "Peck San Theng Fu De Ci",
-    "main-deity": ""
+    "location": "Bishan",
+    "main-deity": ["Fu De Zheng Shen(Tua Pek Kong) 福德正神(大伯公) "]
   },
   "213": {
     "lat": "1.460904",
@@ -1579,6 +1652,7 @@
     "lng": "103.858307",
     "chiName": "波东巴西联合庙",
     "engName": "Potong Pasir Joint Temples Association",
+    "location":"Ang Mo Kio",
     "main-deity": ""
   },
   "226": {
@@ -1593,14 +1667,20 @@
     "lng": "103.948997",
     "chiName": "德光岛天降佛堂太阳宫",
     "engName": "Pulau Tekong Joint Temple",
-    "main-deity": ""
+    "location": "Bedok",
+    "main-deity": [
+      "Taiyang Xingjun/Sun God 太阳星君/太阳公/太阳神", 
+      "San Shi Ye 三师爷",
+      "Duan Bo Gong 緞伯公"
+    ]
   },
   "228": {
     "lat": "1.403068",
     "lng": "103.969765",
     "chiName": "乌敏岛佛山亭大伯公庙",
     "engName": "Pulau Ubin Fo Shan Teng Tua Pek Kong Temple",
-    "main-deity": ""
+    "location": "Pulau Ubin",
+    "main-deity": ["Da Bo Gong(Tua Pek Kong) 大伯公"]
   },
   "229": {
     "lat": "1.392351",
@@ -1614,7 +1694,8 @@
     "lng": "103.833893",
     "chiName": "齐天宫",
     "engName": "Qi Tian Gong",
-    "main-deity": ""
+    "location": "Bukit Merah",
+    "main-deity": ["Monkey King 齐天大圣"]
   },
   "231": {
     "lat": "1.352888",
@@ -1642,21 +1723,30 @@
     "lng": "103.844315",
     "chiName": "三安府",
     "engName": "Sam Ann Temple",
-    "main-deity": ""
+    "location": "Ang Mo Kio",
+    "main-deity": ["Lords Chen 陈府三位大人"]
   },
   "235": {
     "lat": "1.365609",
     "lng": "103.858307",
     "chiName": "三尊宫龙华会",
     "engName": "Sam Choon Keng Liong Wah Huay",
-    "main-deity": ""
+    "location": "Ang Mo Kio",
+    "main-deity": ["Dipamkara Buddha 燃灯尊祖/燃灯佛" ,
+      "Sakyamuni Buddha (Sage of the Sakya) 释迦牟尼/如来佛祖"
+    ]
   },
   "236": {
     "lat": "1.335147",
     "lng": "103.949631",
     "chiName": "三清宫",
     "engName": "San Qing Gong",
-    "main-deity": ""
+    "location": "Bedok",
+    "main-deity": [
+      "Tai Qing Dao De Tian Zun (太清道德天尊)",
+      "Yu Qing Yuan Shi Tian Zun (玉清元始天尊)",
+      "Shang Qing Ling Bao Tian Zun (上清灵宝天尊)"
+    ]
   },
   "237": {
     "lat": "1.380539",
@@ -1670,7 +1760,8 @@
     "lng": "103.757332",
     "chiName": "西天佛庙",
     "engName": "See Thian Foh Temple",
-    "main-deity": ""
+    "location": "Bukit Batok",
+    "main-deity": ["Wu Fa Fo Zhu 五法佛主 (Buddhist hall)" , "Xuan Tian Shangdi 玄天上帝 (Taoist hall)"]
   },
   "239": {
     "lat": "1.460766",
@@ -1712,7 +1803,8 @@
     "lng": "103.933678",
     "chiName": "修德善堂养心社",
     "engName": "Seu Teck Sean Tong Yiang Sin Sia",
-    "main-deity": ""
+    "location": "Bedok",
+    "main-deity": ["Song Da Feng Zu Shi 宋大峰祖师"]
   },
   "245": {
     "lat": "1.391479",
@@ -1754,7 +1846,8 @@
     "lng": "103.740074",
     "chiName": "石竹庙",
     "engName": "Shi Zhu Chinese Temple",
-    "main-deity": ""
+    "location": "Bukit Batok",
+    "main-deity": ["Wu De Ying Hou 武德英侯"]
   },
   "251": {
     "lat": "1.329877",
@@ -1838,7 +1931,8 @@
     "lng": "103.918304",
     "chiName": "顺山亭",
     "engName": "Soon San Teng",
-    "main-deity": ""
+    "location": "Bedok",
+    "main-deity": ["Da Bo Gong(Tua Pek Kong) 大伯公"]
   },
   "263": {
     "lat": "1.433824",
@@ -1866,7 +1960,10 @@
     "lng": "103.841698",
     "chiName": "水沟馆葛岸馆",
     "engName": "Swee Kow Kuan Kueh Hua Kwan",
-    "main-deity": ""
+    "location":"Ang Mo Kio",
+    "main-deity": ["Qingshui Zu Shi 清水祖师" , 
+      "Five Lords (Liu Jin Lei Pan She) 五府大人 （刘，金，雷，潘，畲）"
+    ]
   },
   "267": {
     "lat": "1.332538",
@@ -1894,7 +1991,8 @@
     "lng": "103.828781",
     "chiName": "太阳宫",
     "engName": "Tai Yeong Kon",
-    "main-deity": ""
+    "location": "Bukit Merah",
+    "main-deity": ["Taiyang Xing Jun(Sun God) 太阳星君/太阳公/太阳神"]
   },
   "271": {
     "lat": "1.355912",
@@ -1971,7 +2069,8 @@
     "lng": "103.828011",
     "chiName": "东岳庙",
     "engName": "Tang Gah Beo",
-    "main-deity": ""
+    "location": "Bukit Merah",
+    "main-deity": ["East Peak Emperor (Dongyue Da Di) 东岳大帝"]
   },
   "282": {
     "lat": "1.298213",
@@ -2069,7 +2168,8 @@
     "lng": "103.849312",
     "chiName": "同德善堂念心社",
     "engName": "Thong Teck Sian Tong Lian Sin Sia",
-    "main-deity": ""
+    "location": "Balestier",
+    "main-deity": ["Song Da Feng Zu Shi 宋大峰祖师"]
   },
   "296": {
     "lat": "1.318861",
@@ -2083,7 +2183,8 @@
     "lng": "103.849457",
     "chiName": "天保堂",
     "engName": "Tian Bao Tang",
-    "main-deity": ""
+    "location": "Balestier",
+    "main-deity": ["Guanyin 观音菩萨"]
   },
   "298": {
     "lat": "1.392351",
@@ -2125,7 +2226,8 @@
     "lng": "103.875572",
     "chiName": "天空庙",
     "engName": "Tian Kong Temple",
-    "main-deity": ""
+    "location":"Ang Mo Kio",
+    "main-deity": ["Jade Emperor (Yu Huang Da Di) 玉皇大帝"]
   },
   "304": {
     "lat": "1.357886",
@@ -2174,7 +2276,8 @@
     "lng": "103.843712",
     "chiName": "振源園天公壇",
     "engName": "Tien Kong Thun Temple",
-    "main-deity": ""
+    "location": "Bishan",
+    "main-deity": ["Jade Emperor (Yu Huang Da Di) 玉皇大帝"]
   },
   "311": {
     "lat": "1.315998",
@@ -2216,14 +2319,16 @@
     "lng": "103.803993",
     "chiName": "忠义庙",
     "engName": "Tiong Ghee Temple",
-    "main-deity": ""
+    "location": "Bukit Merah",
+    "main-deity": ["Guan Di (God of War) 关帝"]
   },
   "317": {
     "lat": "1.365609",
     "lng": "103.858307",
     "chiName": "天性祠",
     "engName": "Tiong Sing Sze",
-    "main-deity": ""
+    "location":"Ang Mo Kio",
+    "main-deity": ["San Yi Jiao Zhu 三一教主"]
   },
   "318": {
     "lat": "1.443434",
@@ -2251,7 +2356,8 @@
     "lng": "103.751152",
     "chiName": "东天宫",
     "engName": "Tong Tien Kung",
-    "main-deity": ""
+    "location": "Bukit Batok",
+    "main-deity": ["Taiyang Sheng Jun/Sun God 太阳圣君"]
   },
   "322": {
     "lat": "1.345701",
@@ -2279,7 +2385,8 @@
     "lng": "103.740074",
     "chiName": "临江殿暨对山庙",
     "engName": "Tui San Miew",
-    "main-deity": ""
+    "location": "Bukit Batok",
+    "main-deity": ["Su Ma Fu Ren 苏妈夫人" , "Lords Zhu Xing & Li 朱邢李三王府大人"]
   },
   "326": {
     "lat": "1.338579",
@@ -2299,7 +2406,7 @@
     "lat": "1.284284",
     "lng": "103.849579",
     "chiName": "粤海清庙",
-    "engName": "Yueh Hai Ching Temple",
+    "engName": "Wak Hai Cheng Bio",
     "main-deity": ""
   },
   "329": {
@@ -2349,7 +2456,8 @@
     "lng": "103.751190",
     "chiName": "五雷宫",
     "engName": "Wu Lui Sien Sze Temple",
-    "main-deity": ""
+    "location": "Bukit Batok",
+    "main-deity": ["Wu Lei Shi Gong (Thunder God) 五雷师公"]
   },
   "336": {
     "lat": "1.352952",
@@ -2370,7 +2478,8 @@
     "lng": "103.968346",
     "chiName": "水尾圣娘庙",
     "engName": "Yan Kit Village Chinese Temple",
-    "main-deity": ""
+    "location": "Changi",
+    "main-deity": ["Shui Wei Sheng Niang Er Po 水尾圣娘二婆"]
   },
   "339": {
     "lat": "1.391479",
@@ -2440,7 +2549,8 @@
     "lng": "103.919167",
     "chiName": "竹云宫",
     "engName": "Zhu Yun Gong",
-    "main-deity": ""
+    "location": "Bedok",
+    "main-deity": ["Monkey King 齐天大圣"]
   },
   "349": {
     "lat": "1.282316",
