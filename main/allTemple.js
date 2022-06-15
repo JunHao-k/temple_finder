@@ -17,7 +17,7 @@ let showAllTemples = async () => {
         
         //[status , temperature , min_temp , max_temp , temp_feels]
         // let status, temperature, minTemp , maxTemp , tempFeels;
-        let status_arr = await getWeatherData(templeCoordinates)
+        //let status_arr = await getWeatherData(templeCoordinates)
         // console.log(status_arr)
         // [status , temperature, minTemp , maxTemp , tempFeels] = status_arr
         // console.log(status_arr)
@@ -26,6 +26,10 @@ let showAllTemples = async () => {
                 <h1>${chinese_name}</h1>
                 <h2>${english_name}</h2>
             </div>
+            
+        `)
+
+        /*
             <div>
                 <h1>${status_arr[1]}</h1>
                 <h2>${status_arr[0]}</h2>
@@ -35,7 +39,8 @@ let showAllTemples = async () => {
                     <tr>Feels like: ${status_arr[4]}</tr>
                 </table>
             </div>
-        `)
+        
+        */
         
         templeMarker.addEventListener('click' , () => {
             findVegetarian(templeCoordinates[0] , templeCoordinates[1] , chinese_name , english_name)

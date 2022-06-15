@@ -11,13 +11,17 @@ let findVegetarian = async (lat , lng , chi , eng) => {
     }
 
     let targetTempleIcon = generateIcon('../images/chineseTemple.png')
-    let status_arr = getWeatherData([lat , lng])
+    // let status_arr = getWeatherData([lat , lng])
 
     let targetTemple = L.marker([lat , lng] , {icon: targetTempleIcon}).bindPopup(`
         <div>
             <h1>${chi}</h1>
             <h2>${eng}</h2>
         </div>
+        
+    `).addTo(vegLayer)
+
+    /*
         <div>
             <h1>${status_arr[1]}</h1>
             <h2>${status_arr[0]}</h2>
@@ -27,9 +31,8 @@ let findVegetarian = async (lat , lng , chi , eng) => {
                 <tr>Feels like: ${status_arr[4]}</tr>
             </table>
         </div>
-        
-        
-    `).addTo(vegLayer)
+
+    */
 
     // console.log(nearbyVeg.results)
     for(vegLocation of nearbyVeg.results){
