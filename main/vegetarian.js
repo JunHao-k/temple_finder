@@ -2,24 +2,29 @@ let findVegetarian = async (lat , lng , chi , eng) => {
     let nearbyVeg = await searchFourSquare(lat , lng , "vegetarian" , 13377)
     
     let vegLayer = L.layerGroup()
-    let temple_layer = baseLayers["Show all temples"]
+    let temple_layer = baseLayers["Show-all-temples"]
     
     if(map.hasLayer(temple_layer)){
         map.removeLayer(temple_layer)
         map.addLayer(vegLayer)
-        baseLayers["with veggies"] = vegLayer
+        baseLayers["with-veggies"] = vegLayer
     }
 
     let targetTempleIcon = generateIcon('../images/chineseTemple.png')
     // let status_arr = getWeatherData([lat , lng])
 
-    let targetTemple = L.marker([lat , lng] , {icon: targetTempleIcon}).bindPopup(`
-        <div>
-            <h1>${chi}</h1>
-            <h2>${eng}</h2>
-        </div>
-        
-    `).addTo(vegLayer)
+    let text = 
+    `
+    <div>
+        <h1>${chi}</h1>
+        <h2>${eng}</h2>
+        <button ${onClick = console.log("btn-test")}><button>
+    </div>
+    `
+    let targetTemple = L.marker([lat , lng] , {icon: targetTempleIcon}).bindPopup(text)
+    // targetTemple.bindPopup(btn)
+    
+    targetTemple.addTo(vegLayer)
 
     /*
         <div>

@@ -44,8 +44,8 @@ let showAllTemples = async () => {
         
         templeMarker.addEventListener('click' , () => {
             findVegetarian(templeCoordinates[0] , templeCoordinates[1] , chinese_name , english_name)
-            if(map.hasLayer(baseLayers["with veggies"])){
-                baseLayers["with veggies"].clearLayers()
+            if(map.hasLayer(baseLayers["with-veggies"])){
+                baseLayers["with-veggies"].clearLayers()
             }
         }) 
 
@@ -53,5 +53,5 @@ let showAllTemples = async () => {
         templeMarker.addTo(templeCluster)
     }
     templeCluster.addTo(templeLayer)
-    return [templeLayer , "Show all temples"]
+    return [templeLayer , "Show-all-temples"]
 }
