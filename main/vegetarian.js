@@ -18,7 +18,7 @@ let findVegetarian = async (lat , lng , chi , eng) => {
     <div>
         <h1>${chi}</h1>
         <h2>${eng}</h2>
-        <button ${onClick = console.log("btn-test")}><button>
+        <button ${onClick = alert("btn-test")}><button>
     </div>
     `
     let targetTemple = L.marker([lat , lng] , {icon: targetTempleIcon}).bindPopup(text)

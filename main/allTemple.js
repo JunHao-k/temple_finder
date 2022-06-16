@@ -21,13 +21,15 @@ let showAllTemples = async () => {
         // console.log(status_arr)
         // [status , temperature, minTemp , maxTemp , tempFeels] = status_arr
         // console.log(status_arr)
-        let templeMarker = L.marker(templeCoordinates , {icon: templeIcon}).bindPopup(`
+        
+        let templeMarker = L.marker(templeCoordinates , {icon: templeIcon})/*.bindPopup(`
             <div>
                 <h1>${chinese_name}</h1>
                 <h2>${english_name}</h2>
             </div>
             
         `)
+        */
 
         /*
             <div>
