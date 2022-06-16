@@ -11,16 +11,13 @@ let showAllTemples = async () => {
 
     let createButton = (func , argArr , btnName) => {
         let div = document.createElement('div')
-        let addOn = null
+
         div.innerHTML = `
             <button>${btnName}</button>
         `
         div.querySelector('button').addEventListener('click', function(){
-            addOn = func(argArr)
+            func(argArr)
         });
-        if(addOn != null){
-            div.appendChild(addOn)
-        }
         return div
     }
 
@@ -30,8 +27,8 @@ let showAllTemples = async () => {
         let english_name = templeList[String(i)].engName 
         
         let vegDiv = createButton(findVegetarian , templeCoordinates , "Show nearby vegetarian eatery")
-        let weatherDiv = createButton(getWeatherData , templeCoordinates , "Weather Forecast")
-        //console.log(weatherDiv)
+        // let weatherDiv = createButton(getWeatherData , templeCoordinates , "Weather Forecast")
+        let weatherDiv = document.createElement('div')
 
         let popupDiv = document.createElement('div')
         popupDiv.innerHTML = `
@@ -40,19 +37,15 @@ let showAllTemples = async () => {
                 <h2>${english_name}</h2>
             </div>
         `
-        popupDiv.appendChild(vegDiv)
-        popupDiv.append(weatherDiv)
         
         let templeMarker = L.marker(templeCoordinates , {icon: templeIcon}).bindPopup(popupDiv)
 
-        
-        // templeMarker.addEventListener('click' , () => {
-        //     // findVegetarian(templeCoordinates[0] , templeCoordinates[1] , chinese_name , english_name)
-        //     // if(map.hasLayer(baseLayers["with-veggies"])){
-        //     //     baseLayers["with-veggies"].clearLayers()
-        //     // }
-        // }) 
+        templeMarker.addEventListener('click' , async () => {
+            weatherDiv.innerHTML = await getWeatherData(templeCoordinates)
+        }) 
 
+        popupDiv.append(weatherDiv)
+        popupDiv.appendChild(vegDiv)
         
         templeMarker.addTo(templeCluster)
     }

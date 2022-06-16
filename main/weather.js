@@ -13,7 +13,7 @@ let getWeatherData = async (templeCoord) => {
     let tempArr = [status , temperature , min_temp , max_temp , temp_feels]
 
     let weatherReport = 
-    `<div>
+    `
         <h1>${tempArr[1]}</h1>
         <h2>${tempArr[0]}</h2>
         <table>
@@ -21,7 +21,7 @@ let getWeatherData = async (templeCoord) => {
             <tr>Lowest: ${tempArr[2]}</tr>
             <tr>Feels like: ${tempArr[4]}</tr>
         </table>
-    </div>`
+    `
     return weatherReport
 }
 
