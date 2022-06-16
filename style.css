@@ -1,3 +1,40 @@
+/* extra small screen <576 */
+  @media screen and (max-width: 576px) {
+    .leaflet-touch .leaflet-bar a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+} 
+  
+/* small screen 576 */
+@media screen and (min-width: 576px) {
+    .leaflet-touch .leaflet-bar a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+     
+  
+/* medium screen 768 */
+@media screen and (min-width: 768px) {
+    .leaflet-touch .leaflet-bar a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+  
+/* large screen 992 */
+@media screen and (min-width: 992px) {
+    .leaflet-touch .leaflet-bar a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+      }
+}
+
 #map{
     height: 100vh
 }
