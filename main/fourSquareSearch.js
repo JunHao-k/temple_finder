@@ -7,7 +7,7 @@ let searchFourSquare = async (lat , lng , query , categoryNum) => {
         'params':{
             'll': String(lat) + "," + String(lng),
             'query': query,
-            'radius': 4000,
+            'radius': 3000,
             'categories': String(categoryNum),
             'limit': 10
         },
