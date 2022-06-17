@@ -15,6 +15,7 @@ let showAllTemples = async () => {
         div.innerHTML = `
             <button>${btnName}</button>
         `
+
         div.querySelector('button').addEventListener('click', function(){
             func(argArr)
         });
@@ -33,7 +34,7 @@ let showAllTemples = async () => {
         let popupDiv = document.createElement('div')
         popupDiv.innerHTML = `
             <div>
-                <h1>${chinese_name}</h1>
+                <h1 class="chiName">${chinese_name}</h1>
                 <h2>${english_name}</h2>
             </div>
         `
