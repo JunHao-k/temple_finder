@@ -7,7 +7,7 @@ let findVegetarian = async (coorArr) => {
     // if(nearbyVeg.length == 0){
     //     noVeg = "There are no vegetarian eatery nearby"
     // }
-
+    let vegLayer = L.layerGroup()
     for(vegLocation of nearbyVeg.results){
 
         let vegIcon = generateIcon('../images/veg.png')
@@ -22,8 +22,8 @@ let findVegetarian = async (coorArr) => {
         </p>`
 
         let thisVegRest = L.marker([vegLat,vegLng] , {icon: vegIcon}).bindPopup(address)
-
-        thisVegRest.addTo(baseLayers["Show-all-temples"])
+        thisVegRest.addTo(vegLayer)
+        vegLayer.addTo(baseLayers["Show-all-temples"])
     }
     // return noVeg
 }

@@ -1,5 +1,5 @@
 let showAllTemples = async () => {
-    let response = await axios.get('./data/templeList.json')
+    let response = await axios.get('../data/templeList.json')
     let templeList = response.data
     
     let templeLayer = L.layerGroup()
@@ -21,7 +21,7 @@ let showAllTemples = async () => {
         });
         return div
     }
-
+    // let showMrt = showMrt()
     for(i = 0; i < 350; i++){
         let templeCoordinates = [templeList[String(i)].lat , templeList[String(i)].lng]
         let chinese_name = templeList[String(i)].chiName 
@@ -30,7 +30,8 @@ let showAllTemples = async () => {
         let vegDiv = createButton(findVegetarian , templeCoordinates , "Show nearby vegetarian eatery")
         // let weatherDiv = createButton(getWeatherData , templeCoordinates , "Weather Forecast")
         let weatherDiv = document.createElement('div')
-
+        let mrtDiv = createButton(showMrt , templeCoordinates , "Show nearby MRT stations")
+        
         let popupDiv = document.createElement('div')
         popupDiv.innerHTML = `
             <div>
@@ -47,6 +48,7 @@ let showAllTemples = async () => {
 
         popupDiv.append(weatherDiv)
         popupDiv.appendChild(vegDiv)
+        popupDiv.appendChild(mrtDiv)
         
         templeMarker.addTo(templeCluster)
     }
