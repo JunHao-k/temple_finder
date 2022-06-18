@@ -30,10 +30,6 @@ routeBtn.addEventListener('click' , async () => {
     let [c_lat , c_lng] = [currentLatLng[1] , currentLatLng[0]]
     let [d_lat , d_lng] = [destinationLatLng[1] , destinationLatLng[0]]
 
-    // console.log(c_lat)
-    // console.log(c_lng)
-    // console.log(d_lat)
-    // console.log(d_lng)
     routingControl = L.Routing.control({
     waypoints: [
             L.latLng(c_lat, c_lng),
