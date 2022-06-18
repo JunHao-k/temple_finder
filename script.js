@@ -19,9 +19,13 @@ window.addEventListener('DOMContentLoaded' , async () => {
 
     baseLayers = controlLayers(getAllTemples[1] , getAllTemples[0] , baseLayers)
     // baseLayers = controlLayers(getYueLaoLayer[1] , getYueLaoLayer[0] , baseLayers)
-    
 
     L.control.layers(baseLayers , {}).addTo(map)
+
+    // let geoData = await geoCode("address" , "457 Ang Mo Kio ave10")
+    // let geoData = await geoCode("postcode" , 560457)
+
+    // console.log(geoData)
 })
 
 

@@ -9,15 +9,6 @@ let createMap = () => {
 }
 let map = createMap();
 
-let routingControl = L.Routing.control({
-    waypoints: [
-        L.latLng(1.3521, 103.8198),
-        L.latLng(1.284284 , 103.849579)
-    ]
-})
-
-routingControl.addTo(map)
-
 let baseLayers = {}
 
 let controlLayers = (layerTitle , inputLayer , base) => {

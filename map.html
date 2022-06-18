@@ -49,8 +49,9 @@
               </li>
             </ul>
             <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <input class="form-control me-2" id = "start" type="search" placeholder="Starting Postal Code" aria-label="Search">
+              <input class="form-control me-2" id = "end" type="search" placeholder="Destination Postal Code" aria-label="Search">
+              <button class="btn btn-outline-success" id = "routeSubmit" type="submit">Route</button>
             </form>
           </div>
         </div>
@@ -87,6 +88,10 @@
     
     <script src = "./main/fourSquareSearch.js"></script>
 
+    <script src = "./main/geocoding.js"></script>
+
+    <script src = "./main/route.js"></script>
+
     <script src = "./main/icons.js"></script>
 
     <script src = "./main/showMRT.js"></script>
@@ -103,8 +108,5 @@
     <script src="script.js"></script>
     
     <!-- Optional JavaScript; choose one of the two! -->
-
-   
-
   </body>
 </html>
