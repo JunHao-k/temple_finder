@@ -9,6 +9,8 @@ let createMap = () => {
 }
 let map = createMap();
 
+
+
 let baseLayers = {}
 
 let controlLayers = (layerTitle , inputLayer , base) => {
@@ -16,11 +18,6 @@ let controlLayers = (layerTitle , inputLayer , base) => {
     return base
 }
 
-// L.Routing.control({
-//     waypoints: [
-//         L.latLng(1.311550, 103.760551),
-//         L.latLng(1.284284 , 103.849579)
-//     ]
-// }).addTo(baseLayers[""]);
+
 
 

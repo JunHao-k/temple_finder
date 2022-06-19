@@ -42,3 +42,15 @@
 .chiName{
     color:red;
 }
+
+#startInput{
+    margin-right: .5rem !important;
+}
+
+#endInput{
+    margin-right: .5rem !important;
+}
+
+#routeBtn{
+    margin-right: .5rem !important;
+}

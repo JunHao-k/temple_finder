@@ -49,14 +49,19 @@
               </li>
             </ul>
             <form class="d-flex">
-              <input class="form-control me-2" id = "start" type="search" placeholder="Starting Postal Code" aria-label="Search"/>
-              <input class="form-control me-2" id = "end" type="search" placeholder="Destination Postal Code" aria-label="Search"/>
-              <button class="btn btn-outline-success" id = "routeSubmit" type="button">Route</button>
+              <div id = "startInput">
+                <input class="form-control me-2" id = "start" type="search" placeholder="Starting Postal Code" aria-label="Search"/>
+              </div>
+              <div id = "endInput">
+                <input class="form-control me-2" id = "end" type="search" placeholder="Destination Postal Code" aria-label="Search"/>
+              </div>
+              <div id = "routebtn">
+                <button class="btn btn-outline-success" id = "routeSubmit" type="button">Route</button>
+              </div>
             </form>
           </div>
         </div>
     </nav>
-
     <div id="map"></div>
     <div id = "getData"></div>
    
