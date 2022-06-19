@@ -6,22 +6,27 @@ window.addEventListener('DOMContentLoaded' , async () => {
     baseLayers = controlLayers(getAllTemples[1] , getAllTemples[0] , baseLayers)
     // baseLayers = controlLayers(getYueLaoLayer[1] , getYueLaoLayer[0] , baseLayers)
 
-    let clearVegbtn = document.querySelector("#clearVeg")
+    let clearVegbtn = document.querySelector("#clear-veg")
     clearVegbtn.addEventListener('click' , () => {
-        if(recordedVegMarkers.length !== 0){
-            for(layer of recordedVegMarkers){
+        if(recordedVegLayers.length !== 0){
+            for(layer of recordedVegLayers){
                 baseLayers["Show-all-temples"].removeLayer(layer)
             }
-            recordedVegMarkers = []
+            recordedVegLayers = []
+        }
+    })
+
+    let clearMrtbtn = document.querySelector("#clear-mrt")
+    clearMrtbtn.addEventListener('click' , () => {
+        if(recordedMrtLayers.length !== 0){
+            for(layer of recordedMrtLayers){
+                baseLayers["Show-all-temples"].removeLayer(layer)
+            }
+            recordedMrtLayers = []
         }
     })
 
     L.control.layers(baseLayers , {}).addTo(map)
-
-    // let geoData = await geoCode("address" , "457 Ang Mo Kio ave10")
-    // let geoData = await geoCode("postcode" , 560457)
-
-    // console.log(geoData)
 })
 
 

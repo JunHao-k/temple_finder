@@ -1,13 +1,5 @@
-// let clearVegbtn = document.querySelector("#clearVeg")
-//     clearVegbtn.addEventListener('click' , () => {
-//     if(baseLayers["Show-all-temples"].hasLayer(vegLayer)){
-//         alert("Has veg layer")
-//     }
-//     else{
-//         alert("no veg layer")
-//     }
-// })
-let recordedVegMarkers = []
+
+let recordedVegLayers = []
 
 
 let findVegetarian = async (coorArr) => {
@@ -38,7 +30,7 @@ let findVegetarian = async (coorArr) => {
         let thisVegRest = L.marker([vegLat,vegLng] , {icon: vegIcon}).bindPopup(address)
         thisVegRest.addTo(vegLayer)
     }
-    recordedVegMarkers.push(vegLayer)
+    recordedVegLayers.push(vegLayer)
     // return noVeg
 }
 
