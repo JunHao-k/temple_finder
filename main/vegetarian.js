@@ -1,4 +1,17 @@
+// let clearVegbtn = document.querySelector("#clearVeg")
+//     clearVegbtn.addEventListener('click' , () => {
+//     if(baseLayers["Show-all-temples"].hasLayer(vegLayer)){
+//         alert("Has veg layer")
+//     }
+//     else{
+//         alert("no veg layer")
+//     }
+// })
+let recordedVegMarkers = []
+
+
 let findVegetarian = async (coorArr) => {
+    
     let lat = coorArr[0]
     let lng = coorArr[1]
     let nearbyVeg = await searchFourSquare(lat , lng , "vegetarian" , 13377)
@@ -8,6 +21,7 @@ let findVegetarian = async (coorArr) => {
     //     noVeg = "There are no vegetarian eatery nearby"
     // }
     let vegLayer = L.layerGroup()
+    vegLayer.addTo(baseLayers["Show-all-temples"])
     for(vegLocation of nearbyVeg.results){
 
         let vegIcon = generateIcon('../images/veg.png')
@@ -23,8 +37,8 @@ let findVegetarian = async (coorArr) => {
 
         let thisVegRest = L.marker([vegLat,vegLng] , {icon: vegIcon}).bindPopup(address)
         thisVegRest.addTo(vegLayer)
-        vegLayer.addTo(baseLayers["Show-all-temples"])
     }
+    recordedVegMarkers.push(vegLayer)
     // return noVeg
 }
 

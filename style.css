@@ -34,9 +34,20 @@
         line-height: 30px;
       }
 }
+#map-container{
+    position: relative;
+}
+
+#map-btn{
+    position: absolute;
+    z-index: 314159;
+    top: 10px;
+    left: 50px
+}
 
 #map{
-    height: 100vh
+    height: 100vh;
+    /* position: absolute */
 }
 
 .chiName{

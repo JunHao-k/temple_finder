@@ -9,8 +9,7 @@ let createMap = () => {
 }
 let map = createMap();
 
-
-
+let recordedInnerLayers = []
 let baseLayers = {}
 
 let controlLayers = (layerTitle , inputLayer , base) => {
