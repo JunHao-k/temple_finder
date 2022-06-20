@@ -13,7 +13,7 @@ let showAllTemples = async () => {
         let div = document.createElement('div')
 
         div.innerHTML = `
-            <button>${btnName}</button>
+            <button class = "btn btn-outline-success">${btnName}</button>
         `
 
         div.querySelector('button').addEventListener('click', function(){
@@ -28,28 +28,48 @@ let showAllTemples = async () => {
         let english_name = templeList[String(i)].engName 
         
         let vegDiv = createButton(findVegetarian , templeCoordinates , "Show nearby vegetarian eatery")
-        // let weatherDiv = createButton(getWeatherData , templeCoordinates , "Weather Forecast")
         let weatherDiv = document.createElement('div')
         let mrtDiv = createButton(showMrt , templeCoordinates , "Show nearby MRT stations")
         
         let popupDiv = document.createElement('div')
         popupDiv.innerHTML = `
-            <div>
-                <h1 class="chiName">${chinese_name}</h1>
-                <h2>${english_name}</h2>
+            <div id = "pop-up-div">
+                <div id = "temple-popup-name">
+                    <h1 class="chiName">${chinese_name}</h1>
+                    <h2 class="engName">${english_name}</h2>
+                </div>
             </div>
         `
-        
-        let templeMarker = L.marker(templeCoordinates , {icon: templeIcon}).bindPopup(popupDiv)
+
+        let templeMarker = L.marker(templeCoordinates , {icon: templeIcon}).bindPopup(popupDiv , {
+            minWidth: 600
+        })
 
         templeMarker.addEventListener('click' , async () => {
             weatherDiv.innerHTML = await getWeatherData(templeCoordinates)
         }) 
-
-        popupDiv.append(weatherDiv)
-        popupDiv.appendChild(vegDiv)
-        popupDiv.appendChild(mrtDiv)
         
+        // Create Div to hold both popup temple image div and accordian div
+        let infoDiv = document.createElement('div')
+        infoDiv.setAttribute('id' , 'info-container')
+        infoDiv.appendChild(weatherDiv)
+
+        let temple_popup_imgdiv = document.createElement('div')
+        let popupImage = document.createElement('img')
+        popupImage.setAttribute('class' , 'temple-popup-img')
+        popupImage.src = "../images/test2.jpg"
+        temple_popup_imgdiv.appendChild(popupImage)
+        infoDiv.appendChild(temple_popup_imgdiv)
+        popupDiv.appendChild(infoDiv)
+
+        let vegmrtbtnDiv = document.createElement('div')
+        vegmrtbtnDiv.setAttribute('class' , 'temple-popup-btngroup')
+
+        vegmrtbtnDiv.appendChild(vegDiv)
+        vegmrtbtnDiv.appendChild(mrtDiv)
+        
+        popupDiv.appendChild(vegmrtbtnDiv)
+
         templeMarker.addTo(templeCluster)
     }
     templeCluster.addTo(templeLayer)

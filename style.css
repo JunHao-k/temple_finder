@@ -47,11 +47,51 @@
 
 #map{
     height: 100vh;
-    /* position: absolute */
+}
+
+#temple-popup-name{
+    border: 2px black solid;
+    padding: 5px;
 }
 
 .chiName{
     color:red;
+    font-size: 32px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.engName{
+    color: grey;
+    font-size: 32px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.temple-popup-img{
+    object-fit: contain;
+    height: 100%;
+}
+
+.temple-popup-btngroup{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#info-container{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+#info-container > div:nth-child(1) {
+    width: 30%;
+}
+
+#info-container > div:nth-child(2) {
+	width: 70%;
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #startInput{
