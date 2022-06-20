@@ -1,8 +1,0 @@
-<thead>
-                            <tr>
-                                
-                                <th scope="col">Lowest</th>
-                                <th scope="col">Highest</th>
-                                <th scope="col">Feels Like</th>
-                            </tr>
-                        </thead>

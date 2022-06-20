@@ -39,10 +39,22 @@
 }
 
 #map-btn{
-    position: absolute;
+    /* position: absolute;
     z-index: 314159;
     top: 10px;
-    left: 50px
+    left: 50px */
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#removal-container{
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none
 }
 
 #map{
@@ -50,19 +62,21 @@
 }
 
 #temple-popup-name{
-    border: 2px black solid;
+    background-color: #adb5bd;
     padding: 5px;
+    
 }
 
 .chiName{
-    color:red;
+    color:white;
     font-size: 32px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .engName{
-    color: grey;
+    color: white;
     font-size: 32px;
+    font-weight:200px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -74,12 +88,15 @@
 .temple-popup-btngroup{
     display: flex;
     justify-content: space-evenly;
+    padding: 5px;
+    background-color: #F5F5DC;
 }
 
 #info-container{
     display: flex;
     justify-content: center;
     padding: 5px;
+    background-color: #F5F5DC;
 }
 
 #info-container > div:nth-child(1) {
