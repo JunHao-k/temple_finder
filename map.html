@@ -33,7 +33,9 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">
+            <img src = "./images/brand.png" width="60px" height="60px"/>
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -67,12 +69,12 @@
     <div id = "map-container">
       <div id = "removal-container">
         <div id = "map-btn">
-          <div><button id = "clear-veg" type="button">Remove vegetarian</button></div>
-          <div><button id = "clear-mrt" type="button">Remove MRT</button></div>
+          <button class = "btn btn-outline-success" id = "clear-veg" type="button">Hide vegetarian</button>
+          <button class = "btn btn-outline-success" id = "clear-mrt" type="button">Hide MRT</button>
+          <button class = "btn btn-outline-success" id = "clear-route" type="button">Hide Route</button>
         </div>
       </div>
       <div id="map">
-
       </div>
     </div>
     

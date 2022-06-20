@@ -1,10 +1,8 @@
 window.addEventListener('DOMContentLoaded' , async () => {
 
     let getAllTemples = await showAllTemples()
-    // let getYueLaoLayer = showYueLao()
 
     baseLayers = controlLayers(getAllTemples[1] , getAllTemples[0] , baseLayers)
-    // baseLayers = controlLayers(getYueLaoLayer[1] , getYueLaoLayer[0] , baseLayers)
 
     let clearVegbtn = document.querySelector("#clear-veg")
     clearVegbtn.addEventListener('click' , () => {
@@ -25,6 +23,15 @@ window.addEventListener('DOMContentLoaded' , async () => {
             recordedMrtLayers = []
         }
     })
+
+    let clearRoutebtn = document.querySelector("#clear-route")
+    clearRoutebtn.addEventListener('click' , () => {
+        removeRoute()
+    })
+
+    
+    
+    
 
     L.control.layers(baseLayers , {}).addTo(map)
 })

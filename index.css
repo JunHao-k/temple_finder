@@ -4,3 +4,30 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.card-container{
+    position: relative;
+    margin-top: 200px;
+    padding: 50px;
+} 
+
+.card-footer{
+    background-color: #adb5bd;
+}
+
+.post_info_author_name{
+    color: white
+}
+
+.card:hover{
+    transform: translate3d(0px, -10px, 0px);
+    transition: 0.25s ease;
+    cursor: pointer;
+}
+
+.card-container .card{
+    background-color: #1b1b1b;
+    /* opacity: 90%; */
+    color: white;
+    padding: 51px 13px 49px; 
+  }

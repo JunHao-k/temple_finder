@@ -34,9 +34,9 @@
         line-height: 30px;
       }
 }
-#map-container{
+/* #map-container{
     position: relative;
-}
+} */
 
 #map-btn{
     /* position: absolute;
@@ -44,18 +44,21 @@
     top: 10px;
     left: 50px */
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 7px;
 }
 
 #removal-container{
     height: 50px;
-    background-color: white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    display: none
+    display: block;
+    background-color: #adb5bd;
+    
 }
+
 
 #map{
     height: 100vh;

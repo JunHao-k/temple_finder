@@ -8,13 +8,13 @@ let geoCode = async (searchType , searchValue) => {
     
     let type = `types=${searchType}&`
     let valuePost = `${searchValue}.json?country=sg&`
-    let valueAddress = `${searchValue}.json?country=sg&`
+    // let valueAddress = `${searchValue}.json?country=sg&`
     
     if(searchType === "postcode"){
         geo_endpoint = GEO_API_URL + valuePost + type + accessKeyStr
     }
     else{
-        geo_endpoint = GEO_API_URL + valueAddress + accessKeyStr
+        geo_endpoint = GEO_API_URL + valuePost + accessKeyStr
     }    
 
     console.log(geo_endpoint)

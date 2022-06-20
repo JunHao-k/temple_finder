@@ -4,6 +4,8 @@ let recordedVegLayers = []
 
 let findVegetarian = async (coorArr) => {
     
+
+    
     let lat = coorArr[0]
     let lng = coorArr[1]
     let nearbyVeg = await searchFourSquare(lat , lng , "vegetarian" , 13377)
@@ -27,6 +29,7 @@ let findVegetarian = async (coorArr) => {
             minWidth: 600
         })
         thisVegRest.addTo(vegLayer)
+        // document.querySelector("#removal-container").style.display = "block"
     }
     recordedVegLayers.push(vegLayer)
 }
