@@ -121,3 +121,7 @@ body{
 #searchFn{
     display: flex
 }
+
+.card-body > h5{
+  color: pink
+}

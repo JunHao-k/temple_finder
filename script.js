@@ -4,7 +4,11 @@ window.addEventListener('DOMContentLoaded' , async () => {
     let urlParams = new URLSearchParams(queryString);
     let specifiedLat = urlParams.get('lat')
     let specifiedLng = urlParams.get('lng')
-    map.flyTo([specifiedLat , specifiedLng] , 19)
+
+    if(specifiedLat != "" || specifiedLng != ""){
+        map.flyTo([specifiedLat , specifiedLng] , 19)
+    }
+    
 
     let getAllTemples = await showAllTemples()
 

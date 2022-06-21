@@ -18,10 +18,10 @@ let removeRoute = () => {
     }
 }
 let clearRoutebtn = document.querySelector("#clear-route")
-    clearRoutebtn.addEventListener('click' , () => {
-        // alert("button clicked")
-        removeRoute()
-    })
+clearRoutebtn.addEventListener('click' , () => {
+    // alert("button clicked")
+    removeRoute()
+})
 
 let errorMsgCreated = false
 let createStartErrorMsg = () => {
@@ -40,6 +40,16 @@ let createEndErrorMsg = () => {
     temp.setAttribute("id","endError")
     document.querySelector('#endInput').appendChild(temp)
     styleFunction("pink" , "red" , "20px" , "5px" , "5px" , "10px" , temp)
+}
+
+let createSearchErrorMsg = () => {
+    let errorMessage = "Please enter a valid postal temple postal code"
+    let temp = document.createElement('p')
+    temp.innerHTML = errorMessage
+    temp.setAttribute("id","searchError")
+    // document.querySelector('#searchInput').appendChild(temp)
+    styleFunction("pink" , "red" , "20px" , "5px" , "5px" , "10px" , temp)
+    return temp
 }
 
 routeBtn.addEventListener('click' , async () => {

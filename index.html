@@ -53,14 +53,14 @@
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div id = "searchFn">
+      <!-- <div id = "searchFn">
         <div id = "searchInput">
           <input class="form-control me-2" id = "search-bar" type="search" placeholder="Temple postal code" aria-label="Search"/>
         </div>
         <div class="col-auto">
           <button type="submit" class="btn btn-outline-light" id = "searchBtn">Find Temple</button>
         </div>
-      </div>
+      </div> -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
@@ -109,6 +109,9 @@
           <div class="card-body">
             <h5 class="card-title">月下老人 </h5>
             <h5 class="card-title">Yue Xia Lao Ren</h5>
+            <h5 class="card-title">Notable temple:
+              <p>粤海清庙 Yuen Hai Ching Temple</p>
+            </h5>
             <div class="separator small left" style="background-color: #494949;"></div>
             <p class="card-text">
               月下老人(Yue Xia Lao Ren or short for Yue-Lao) is a god of marriage and love in Chinese mythology.
@@ -131,48 +134,59 @@
       </div>
       <div class="col">
         <div class="card h-100">
-          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <img src="./images/guanyin.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Biggest Volcano Timelapse</h5>
+            <h5 class="card-title">观音菩萨</h5>
+            <h5 class="card-title">Goddess Of Mercy</h5>
+            <h5 class="card-title">
+              Notable temple:
+              <p>观音堂佛祖庙 Kwan Im Thong Hood Cho Temple</p>
+            </h5>
             <div class="separator small left" style="background-color: #494949;"></div>
-            <p class="card-text">VICE meets up with Joe Nickell, a longtime paranormal investigator who’s been
-              called the real-life Scully.
-              We travel with him to Roswell, NM on the called the real
+            <p class="card-text">
+              Guan Yin is the deity of mercy and compassion. And much like how one would seek the 
+              divine for help through prayer, Chinese families often pray to Guan Yin to attract 
+              compassion, strength to tide themselves through suffering, and overall good fortune.
+              Guan Yin is also often considered the patron deity for mothers, and some customs believe that 
+              placing a Guan Yin statue in the home will bless the family with filial children as 
+              well as protect them from harm.
             </p>
           </div>
           <div class="card-footer">
-            <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
             <div class="post_info_author">
-              <img alt="Author Image"
-                src="https://secure.gravatar.com/avatar/821dd3f641f1eb54a7401df3a82bf325?s=30&amp;d=mm&amp;r=g"
-                srcset="https://secure.gravatar.com/avatar/821dd3f641f1eb54a7401df3a82bf325?s=60&amp;d=mm&amp;r=g 2x"
-                class="avatar avatar-30 photo" width="30" height="30">
-              <span class="post_info_author_name">Robert Altmany</span>
-              <span class="post_info_date">24 February, 2016</span>
+              <span class="post_info_author_name">Click to visit recommended temple</span>
             </div>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card h-100">
-          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <img src="./images/mazu.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Inside the Protein Bar</h5>
+            <h5 class="card-title">天后圣母</h5>
+            <h5 class="card-title">Mazu</h5>
+            <h5 class="card-title">
+              Notable temple:
+              <p>天福宫 Thian Hock Keng</p>
+            </h5>
             <div class="separator small left" style="background-color: #494949;"></div>
-            <p class="card-text">VICE meets up with Joe Nickell, a longtime paranormal investigator who’s been
-              called the real-life Scully.
-              We travel with him to Roswell, NM on the called the real
+            <p class="card-text"> 
+              Mazu (妈祖), also known as the Goddess of the Sea, is a sea deity popularly 
+              worshipped in the provinces of Fujian and Guangdong in Mainland China, Taiwan, 
+              Hong Kong, Macau, and various parts of Southeast Asia with a sizeable Chinese 
+              population like Malaysia, Singapore and Indonesia. She is believed to have authority 
+              over the Four Seas Dragon Kings (四海龙王) and serves as a patron deity for seafarers 
+              and all who depend on the sea for a living.  
+              Traditionally, one prays to Mazu for peace and safety. Worship practices include ritual offerings of 
+              food and joss sticks, festivals and street processions. The existence of sea deity worship here 
+              is a reflection of Singapore’s rich migration history and maritime past.
+
+              
             </p>
           </div>
           <div class="card-footer">
-            <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
-            <div class="post_info_author">
-              <img alt="Author Image"
-                src="https://secure.gravatar.com/avatar/821dd3f641f1eb54a7401df3a82bf325?s=30&amp;d=mm&amp;r=g"
-                srcset="https://secure.gravatar.com/avatar/821dd3f641f1eb54a7401df3a82bf325?s=60&amp;d=mm&amp;r=g 2x"
-                class="avatar avatar-30 photo" width="30" height="30">
-              <span class="post_info_author_name">Robert Altmany</span>
-              <span class="post_info_date">24 February, 2016</span>
+            <div class="post_info_author">         
+              <span class="post_info_author_name">Click to visit recommended temple</span>
             </div>
           </div>
         </div>
@@ -258,43 +272,16 @@
   </script>
 
   <script src = "./main/geocoding.js"></script>
-  <!-- <script src = "./main/route.js"></script> -->
+  <script src = "./main/route.js"></script>
 
   <script>
     let cardSelector = document.querySelectorAll(".card")
-    let search = document.querySelector("#searchBtn")
-    let errMsg = createSearchErrorMsg()
-    let isError = false
-    let isErrorMsgReady = false
-    
+    let latlngRecords = [[1.284284, 103.849579] , [1.300891 , 103.852837] , [1.280916 , 103.847626]]
 
-    search.addEventListener("click" , async () => {
-      let num = document.querySelector("#search-bar").value
-      let latlngArr = await geoCode("postcode" , num)
-      if(latlngArr.length == 0){
-        isError = true
-      }
-      else{
-        isError = false
-      }
-
-      if(isError){
-        if(!isErrorMsgReady){
-          document.querySelector("#searchInput").appendChild(errMsg)
-        }
-        document.querySelector("#searchError").style.display = "block"
-      }
-      else{
-        document.querySelector("#searchError").style.display = "none"
-      }
-    })
-
-    let latlngRecords = [[1.284284 , 103.849579]]
-    
-    for (i = 0; i < cardSelector.length; i++) {
+    for(i = 0; i < cardSelector.length; i++){
       let lat = latlngRecords[i][0]
       let lng = latlngRecords[i][1]
-
+    
       cardSelector[i].addEventListener("click", () => {
         queryStr = `?lat=${lat}&lng=${lng}`
         location.href = "./map.html" + queryStr
@@ -302,6 +289,8 @@
       })
     }
   </script>
+    
+  
 </body>
 
 </html>
