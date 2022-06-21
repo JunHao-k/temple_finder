@@ -1,5 +1,11 @@
 window.addEventListener('DOMContentLoaded' , async () => {
 
+    let queryString = window.location.search;
+    let urlParams = new URLSearchParams(queryString);
+    let specifiedLat = urlParams.get('lat')
+    let specifiedLng = urlParams.get('lng')
+    map.flyTo([specifiedLat , specifiedLng] , 19)
+
     let getAllTemples = await showAllTemples()
 
     baseLayers = controlLayers(getAllTemples[1] , getAllTemples[0] , baseLayers)
