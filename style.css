@@ -8,7 +8,26 @@
 
     .leaflet-popup-content {
         max-width: 300px !important;
-
+    }
+    #info-container > div:nth-child(1) {
+        
+        width: 100% !important;
+        height: 100% !important;
+    }
+    
+    #info-container > div:nth-child(2) {
+        width: 60% !important;
+        height: 60% !important ; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+    }
+    .temple-popup-img{
+        /* object-fit: contain;
+        height: 100%;
+        width: 100%; */
+        display: none
     }
     
 } 
@@ -29,6 +48,29 @@
         width: 40px;
         height: 40px;
         line-height: 40px;
+    }
+    .leaflet-popup-content {
+        max-width: 500px !important;
+
+        
+    }
+    #info-container > div:nth-child(1) {
+        width: 40% !important;
+        height: 40% !important;
+    }
+    
+    #info-container > div:nth-child(2) {
+        width: 60% !important;
+        height: 60% !important ; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+    }
+    .temple-popup-img{
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
     }
 }
   

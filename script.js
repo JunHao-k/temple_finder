@@ -2,11 +2,18 @@ window.addEventListener('DOMContentLoaded' , async () => {
 
     let queryString = window.location.search;
     let urlParams = new URLSearchParams(queryString);
-    let specifiedLat = urlParams.get('lat')
-    let specifiedLng = urlParams.get('lng')
-
-    if(specifiedLat != "" || specifiedLng != ""){
-        map.flyTo([specifiedLat , specifiedLng] , 19)
+    if(urlParams.get('lat') && urlParams.get('lng')){
+        let specifiedLat = urlParams.get('lat')
+        let specifiedLng = urlParams.get('lng')
+        if(specifiedLat != "" || specifiedLng != ""){
+            map.flyTo([specifiedLat , specifiedLng] , 19)
+            let greenCircles = L.layerGroup();
+            L.circle([specifiedLat , specifiedLng] , {
+                radius: 40,
+                color: "green"
+            }).addTo(greenCircles)
+            greenCircles.addTo(map)
+        }
     }
     
 
@@ -35,7 +42,8 @@ window.addEventListener('DOMContentLoaded' , async () => {
     })
 
 
-    L.control.layers(baseLayers , {}).addTo(map)
+
+    L.control.layers(baseLayers , overlays).addTo(map)
 })
 
 
