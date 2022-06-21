@@ -30,14 +30,6 @@ window.addEventListener('DOMContentLoaded' , async () => {
         }
     })
 
-    let clearRoutebtn = document.querySelector("#clear-route")
-    clearRoutebtn.addEventListener('click' , () => {
-        removeRoute()
-    })
-
-    
-    
-    
 
     L.control.layers(baseLayers , {}).addTo(map)
 })

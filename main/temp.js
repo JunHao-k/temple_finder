@@ -17,12 +17,6 @@ let removeRoute = () => {
         routingControl = null;
     }
 }
-let clearRoutebtn = document.querySelector("#clear-route")
-    clearRoutebtn.addEventListener('click' , () => {
-        // alert("button clicked")
-        removeRoute()
-    })
-
 let errorMsgCreated = false
 let createStartErrorMsg = () => {
     let errorMessage = "Please enter a valid postal code for starting position"
@@ -62,10 +56,13 @@ routeBtn.addEventListener('click' , async () => {
     
     let [currentArr, destinationArr] = await Promise.all([geoCode("postcode" , current), geoCode("postcode" , destination)])
 
+    
     if(currentArr.length == 0){
+        
         validStartPostal = false
     }
     if(destinationArr.length == 0){
+        
         validEndPostal = false
     }
 
@@ -83,8 +80,8 @@ routeBtn.addEventListener('click' , async () => {
         endErrorDisplay.style.display = "block"
     }
     
-    let currentLatLng = currentArr[0].center
-    let destinationLatLng = destinationArr[0].center
+    let currentLatLng = currentArr[0].center ? validStartPostal : 0
+    let destinationLatLng = destinationArr[0].center ? validEndPostal : 0
 
     let [c_lat , c_lng] = [currentLatLng[1] , currentLatLng[0]]
     let [d_lat , d_lng] = [destinationLatLng[1] , destinationLatLng[0]]

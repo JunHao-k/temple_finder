@@ -17,7 +17,7 @@ let geoCode = async (searchType , searchValue) => {
         geo_endpoint = GEO_API_URL + valuePost + accessKeyStr
     }    
 
-    console.log(geo_endpoint)
+    // console.log(geo_endpoint)
     let response = await axios.get(geo_endpoint)
     return response.data.features
 }

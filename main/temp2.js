@@ -1,3 +1,4 @@
+
 let routeBtn = document.querySelector("#routeSubmit")
 
 let routingControl = null
@@ -17,12 +18,6 @@ let removeRoute = () => {
         routingControl = null;
     }
 }
-let clearRoutebtn = document.querySelector("#clear-route")
-    clearRoutebtn.addEventListener('click' , () => {
-        // alert("button clicked")
-        removeRoute()
-    })
-
 let errorMsgCreated = false
 let createStartErrorMsg = () => {
     let errorMessage = "Please enter a valid postal code for starting position"
@@ -42,8 +37,19 @@ let createEndErrorMsg = () => {
     styleFunction("pink" , "red" , "20px" , "5px" , "5px" , "10px" , temp)
 }
 
+let createSearchErrorMsg = () => {
+    let errorMessage = "Please enter a valid postal temple postal code"
+    let temp = document.createElement('p')
+    temp.innerHTML = errorMessage
+    temp.setAttribute("id","searchError")
+    // document.querySelector('#searchInput').appendChild(temp)
+    styleFunction("pink" , "red" , "20px" , "5px" , "5px" , "10px" , temp)
+    return temp
+}
+
 routeBtn.addEventListener('click' , async () => {
-    
+    // let currentLatLng = null
+    // let destinationLatLng = null
     removeRoute()
     // I just need to create the error message once and toggle it on or off with correct/wrong input
     if(errorMsgCreated == false){
@@ -70,7 +76,7 @@ routeBtn.addEventListener('click' , async () => {
     }
 
     if(validStartPostal == true){
-        startErrorDisplay.style.display = "none"
+        startErrorDisplay.style.display = "none"        
     }
     else{
         startErrorDisplay.style.display = "block"
@@ -82,6 +88,8 @@ routeBtn.addEventListener('click' , async () => {
     else{
         endErrorDisplay.style.display = "block"
     }
+    
+   
     
     let currentLatLng = currentArr[0].center
     let destinationLatLng = destinationArr[0].center
@@ -135,3 +143,11 @@ routeBtn.addEventListener('click' , async () => {
     })
     routingControl.addTo(map)
 })
+
+
+
+
+
+
+
+

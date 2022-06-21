@@ -53,12 +53,13 @@
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div id = "startInput">
-        <input class="form-control me-2" id = "start" type="search" placeholder="Temple postal code" aria-label="Search"/>
-      </div>
-      <div class="col-auto">
-        <!-- Submit button -->
-        <button type="submit" class="btn btn-outline-light" id = "searchBtn">Find Temple</button>
+      <div id = "searchFn">
+        <div id = "searchInput">
+          <input class="form-control me-2" id = "search-bar" type="search" placeholder="Temple postal code" aria-label="Search"/>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-outline-light" id = "searchBtn">Find Temple</button>
+        </div>
       </div>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
@@ -250,11 +251,46 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
+  <!-- Axios Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+  integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+
+  <script src = "./main/geocoding.js"></script>
+  <!-- <script src = "./main/route.js"></script> -->
 
   <script>
     let cardSelector = document.querySelectorAll(".card")
-    let latlngRecords = [[1.284284 , 103.849579]]
+    let search = document.querySelector("#searchBtn")
+    let errMsg = createSearchErrorMsg()
+    let isError = false
+    let isErrorMsgReady = false
+    
 
+    search.addEventListener("click" , async () => {
+      let num = document.querySelector("#search-bar").value
+      let latlngArr = await geoCode("postcode" , num)
+      if(latlngArr.length == 0){
+        isError = true
+      }
+      else{
+        isError = false
+      }
+
+      if(isError){
+        if(!isErrorMsgReady){
+          document.querySelector("#searchInput").appendChild(errMsg)
+        }
+        document.querySelector("#searchError").style.display = "block"
+      }
+      else{
+        document.querySelector("#searchError").style.display = "none"
+      }
+    })
+
+    let latlngRecords = [[1.284284 , 103.849579]]
+    
     for (i = 0; i < cardSelector.length; i++) {
       let lat = latlngRecords[i][0]
       let lng = latlngRecords[i][1]
