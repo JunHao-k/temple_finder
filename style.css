@@ -5,6 +5,12 @@
         height: 50px;
         line-height: 50px;
     }
+
+    .leaflet-popup-content {
+        max-width: 300px !important;
+
+    }
+    
 } 
   
 /* small screen 576 */
@@ -32,11 +38,17 @@
         width: 30px;
         height: 30px;
         line-height: 30px;
-      }
+    }
+    .temple-popup-img{
+        /* object-fit: contain; */
+        height: 100%;
+        width: 100%
+    }
 }
-/* #map-container{
+
+#map-container{
     position: relative;
-} */
+}
 
 #map-btn{
     /* position: absolute;
@@ -58,16 +70,83 @@
     background-color: #adb5bd;
     
 }
-
+.nav{
+    position: absolute
+}
 
 #map{
     height: 100vh;
 }
 
+
+/* ------------------------------ MRT Markers Pop up Styling ----------------------------------------------- */
+
+#station-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px
+}
+
+.separator.small.left{
+    height: 3px;
+    width: 100%;
+    margin: 12px 0 26px;
+}
+
+
+#mrt-popup-container{
+    background-color: #F5F5DC;
+    padding: 10px;
+}
+
+#mrt-popup-container > h3:nth-child(1){
+    padding: 10px;
+    background-color: #adb5bd;
+}
+
+#mrt-symbol{
+    height: 100px;
+    width: 100px;
+}
+
+
+
+/* ------------------------------- End Of MRT Markers Pop up Styling ----------------------------------------------- */
+
+
+
+
+/* ------------------------------ Vegetarian Eateries Markers Pop up Styling ----------------------------------------------- */
+
+.list-group > li:nth-child(1){
+    background-color: #80DEEA
+}
+
+.list-group > li:nth-child(2){
+    background-color: #ffc0cb
+}
+
+.list-group > li:nth-child(3){
+    background-color: #80DEEA
+}
+
+.list-group > li:nth-child(4){
+    background-color: #ffc0cb
+}
+
+#vegName{
+    padding: 10px;
+    background-color:#AFE1AF;
+    color: grey
+}
+
+/* ------------------------------- End Of Vegetarian Markers Pop up Styling ----------------------------------------------- */
+
+
+/* ------------------------------ Temple Markers Pop up Styling ----------------------------------------------- */
 #temple-popup-name{
     background-color: #adb5bd;
     padding: 5px;
-    
 }
 
 .chiName{
@@ -113,6 +192,12 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.leaflet-popup-content {
+    width: 600px;
+}
+
+/* -------------------------- End Of Temple Markers Pop up Styling ----------------------------------------------- */
 
 #startInput{
     margin-right: .5rem !important;

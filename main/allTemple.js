@@ -45,9 +45,11 @@ let showAllTemples = async () => {
             minWidth: 600
         })
 
+        // let templeMarker = L.marker(templeCoordinates , {icon: templeIcon}).bindPopup(popupDiv)
+
         templeMarker.addEventListener('click' , async () => {
             weatherDiv.innerHTML = await getWeatherData(templeCoordinates)
-            map.flyTo([templeCoordinates[0] , templeCoordinates[1]] , 14)
+            map.flyTo([templeCoordinates[0] , templeCoordinates[1]] , 15)
         }) 
         
         // Create Div to hold both popup temple image div and accordian div
