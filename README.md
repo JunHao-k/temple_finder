@@ -54,7 +54,7 @@ The site should at least contain location markers of 350 temples spreaded across
 
 ### Structure
 <figure>
-    <img src="/readme/info_design.png" height="500" alt="Information Architecture and Design">
+    <img src="./images/site-architecture.jpg" height="500" alt="Information Architecture and Design">
     <figcaption>Information Architecture and Design of the site</figcaption>
 </figure>
 
