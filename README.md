@@ -11,6 +11,7 @@ The goal of the site is to provide quicker access to location of chinese temples
 ### Users' Goals
 General public users who are interested should be able to easily find a way to a desired temple from
 where they are using postal codes. They would also be able to plan ahead of their trip by checking current weather, vegetarian food places as part of after prayers rituals and nearest MRT stations
+
 ---
 
 ## The Five Planes of UI/UX
