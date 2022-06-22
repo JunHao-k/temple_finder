@@ -58,24 +58,10 @@ The site should at least contain location markers of 350 temples spreaded across
     <figcaption>Information Architecture and Design of the site</figcaption>
 </figure>
 
-1. Loading of the site will bring user to the first interactive dashboard _Overview_ of the site
-2. Ideally, there will be a loading splash across the screen while fetching and transforming the data necessary for the dashboards
-3. Each Dashboard content section will allow users to filter to the data needed
-   - Overview: allow users to filter by a single year
-   - Past Years Trend: allow users to filter a range of years
-   - Plan Area: allow users to see selected data for a particular region in Singapore
-   - Compare Areas: allow users to select the areas and category to compare
-4. There is a Find Out More page to summarize the site and the data used
-
-### Skeleton
-<figure>
-    <img src="/readme/initial_prototype.jpg" height="500" alt="Prototype">
-    <figcaption>Intial UI/UX design idea</figcaption>
-</figure>
-
-### Surface
-
-In order to complement various design intended for the site, Cirrus UI has been chosen to be used in place of Bootstrap.
+1. Loading of the site will bring user to the main page of the site
+2. Each of the card shown represent one of the 3 most notable and famous chinese temple in Singapore that will take you to the temple marker on the map
+3. Individual Map itself will show all the 350 listed temples in Singapore as markers, access it through navbar
+4. Map allows users to find route from point A to point B using their postal codes and check information on their destination by clicking on their marker
 
 #### Color Scheme
 
@@ -88,9 +74,6 @@ In order to complement various design intended for the site, Cirrus UI has been 
 - This color is then locked in to Coolors to randomly generate other colors to complement
 - Brighter colors are chosen to be used emphasized content
 - Lighter colors are used as accents such as shadows and backgrounds
-
-#### Font
-Monsterrat is the web font used mostly in the site for headers and Nunito Sans is used for the rest.
 
 #### Icons
 Font awesome icons are also used to denote certain elements and to convey intention of the element. Elements included but not limited are tabs, menus and filters.
