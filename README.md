@@ -63,20 +63,22 @@ The site should at least contain location markers of 350 temples spreaded across
 3. Individual Map itself will show all the 350 listed temples in Singapore as markers, access it through navbar
 4. Map allows users to find route from point A to point B using their postal codes and check information on their destination by clicking on their marker
 
+### Surface
+
 #### Color Scheme
 
 <figure>
-    <img src="/readme/site_color_scheme.png" height="500" alt="Color Scheme">
-    <figcaption>Website color scheme to complement primary color</figcaption>
+    <img src="./images/colour-theme" height="500" alt="Color Scheme">
+    <figcaption>Website color scheme</figcaption>
 </figure>
 
-- The primary color used is the red used in Singapore's flag[^1]:
-- This color is then locked in to Coolors to randomly generate other colors to complement
+- The primary color used is black and grey to complement the younger generation taste in monochrome
+- Darker colours like black and grey help to bring out the minimalistic feels that appeals to the younger age group of the target audience
 - Brighter colors are chosen to be used emphasized content
 - Lighter colors are used as accents such as shadows and backgrounds
 
 #### Icons
-Font awesome icons are also used to denote certain elements and to convey intention of the element. Elements included but not limited are tabs, menus and filters.
+Font awesome icons are also used to denote social media platforms, map markers are sourced from flaticon free icons website
 
 ---
 
@@ -87,17 +89,16 @@ Test Cases can be found [here](/readme/test_cases.xlsx)
 
 ## Possible Enhancements
 
-- Slider: while working on the project, there was intention to change from prototype to put graphs and charts into carousels for mobile views due to concerns abour scrolling. This is still work in progress, as issues were found during implementation stage.
-- Age Group Data: inconsistencies in data makes it hard to plot against charts for comparison, will need to cross check between years to resolve this
-- Data: There are more data files that can be included to go deeper for users who have vested interest
+- Mobile responsiveness for phones is still incomplete. This is especially so for small phones.
+- Temple Data: Only consist of location data and not much else to include (E.g. main deities, opening hours and postal code address)
 
 ---
 
 ## Challenges and Constraints
 
-1. As there was issue with calling DOS API using Axios due to CORS policy, the current dataset used is downloaded by accessing the endpoint directly. For this reason the site may continue to serve out of date Annual Population data in future should the data be updated.
-2. Geographic distribution dataset from DOS also have unique API, meaning to say that for each time a new survey is done, a new API or JSON file will be required to keep the site updated 
-3. As Geographic Distribution regions are based off of 2019 Master Plan, any changes done by URA will not be updated
+1. Temple location data is not readily availabe as API or JSON file. 
+2. Forward geocoding using raw address instead of postal codes will return an array of locations. Sometimes the intended latitude and longitude is present within the array but sometimes the array returned only contains latitude and longitude of locations that are nearby the intended latitude and longitude coordinate.
+3. Forward geocoding using postal code will sometimes return results even though the postal code inputted is invalid. This is because the geocoding API by mapbox will truncate and match the input with a postal code that is not the intended location.
 
 ---
 
@@ -105,29 +106,25 @@ Test Cases can be found [here](/readme/test_cases.xlsx)
 
 ### Technologies Used
 
-1. [Cirrus UI](https://www.cirrus-ui.com/) as base tempalate and CSS library for the UI
-   - Lighter than Bootstrap
-   - Works similar to Bootstrap, so not much re-learning needs to be done
-   - Have the components and utilities that are needed for the project
-   - 2 font families offered are what I had in mind
-2. [Font Awesome](https://fontawesome.com/) for icons used
-3. [Google Font](https://fonts.google.com/) for the fonts used (i.e. Montserrat, Nunito Sans)
-4. [AXIOS](https://axios-http.com/docs/intro) for AJAX requests
-5. [ApexCharts](https://apexcharts.com/) for all the graphs and charts displayed
-6. [Leaflet](https://leafletjs.com/) for Choropleth map
-7. [Multi-select](https://github.com/varundewan/multiselect) for forms
-8. [Git](https://git-scm.com/) for version control
-9. [GitHub](http://github.com) for the repository
-10. [Visual Studio Code](https://code.visualstudio.com/) for code editing and local server
-11. [Netlify](https://www.netlify.com/) for deployment
+1. [Font Awesome](https://fontawesome.com/) for social media platform icons used
+2. [AXIOS](https://axios-http.com/docs/intro) for AJAX requests
+3. [Leaflets](https://leafletjs.com/) for the displayed map
+4. [Leaflets](https://www.liedman.net/leaflet-routing-machine/) for the routing plugin
+5. [Git](https://git-scm.com/) for version control
+6. [GitHub](http://github.com) for the repository
+7. [Netlify](https://www.netlify.com/) for deployment
    
 ### Data Sources
 
-1. Department of Statistics Singapore's Table Builder API
-   - https://www.singstat.gov.sg/
-   - https://tablebuilder.singstat.gov.sg/
-2. Data.gov.sg for URA 2019 Master Plan
-   - https://data.gov.sg/dataset/master-plan-2019-planning-area-boundary-no-sea
+1. data.world to get data on MRT station locations
+   - https://data.world/hxchua/train-stations-in-singapore/workspace/file?filename=mrtsg.csv
+2. Weather data API
+   - https://openweathermap.org/api
+3. Foursquare API
+   - https://foursquare.com/products/places-api/
+4. Geocoding API
+   - https://docs.mapbox.com/api/search/geocoding/
+
 
 ### Other Attributions
 1. [Paul Chor](https://github.com/kunxin-chor) for all his guidance and using his tutorials as references for the codes 
