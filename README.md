@@ -68,7 +68,7 @@ The site should at least contain location markers of 350 temples spreaded across
 #### Color Scheme
 
 <figure>
-    <img src="./images/colour-theme" height="500" alt="Color Scheme">
+    <img src="./images/colour-theme.jpg" height="500" alt="Color Scheme">
     <figcaption>Website color scheme</figcaption>
 </figure>
 

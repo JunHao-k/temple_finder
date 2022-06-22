@@ -47,9 +47,9 @@ let showAllTemples = async () => {
 
         templeMarker.addEventListener('click' , async () => {
             weatherDiv.innerHTML = await getWeatherData(templeCoordinates)
-            // map.flyTo([templeCoordinates[0] , templeCoordinates[1]] , 15)
+            map.flyTo([templeCoordinates[0] , templeCoordinates[1]] , 15)
             L.circle(templeCoordinates , {
-                radius: 4000,
+                radius: 500,
                 color: "yellow"
             }).addTo(yellowCircle).addTo(map)
 
