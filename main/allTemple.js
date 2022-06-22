@@ -50,8 +50,8 @@ let showAllTemples = async () => {
             map.flyTo([templeCoordinates[0] , templeCoordinates[1]] , 15)
             L.circle(templeCoordinates , {
                 radius: 500,
-                color: "yellow"
-            }).addTo(yellowCircle).addTo(map)
+                color: "red"
+            }).addTo(redCircle).addTo(map)
 
         }) 
         

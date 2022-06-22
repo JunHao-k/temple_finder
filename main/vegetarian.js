@@ -5,7 +5,7 @@ let recordedVegLayers = []
 let findVegetarian = async (coorArr) => {
 
     // Zoom out to show a bigger picture of surroundings
-    // map.flyTo(coorArr , 14)
+    map.flyTo(coorArr , 13)
     
     let lat = coorArr[0]
     let lng = coorArr[1]

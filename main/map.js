@@ -12,9 +12,9 @@ let map = createMap();
 let recordedInnerLayers = []
 let baseLayers = {}
 
-let yellowCircle = L.layerGroup()
+let redCircle = L.layerGroup()
 let overlays = {
-    "Yellow Circles": yellowCircle,
+    "Red Circles": redCircle,
 }
 
 let controlLayers = (layerTitle , inputLayer , base) => {

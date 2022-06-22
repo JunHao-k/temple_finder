@@ -62,6 +62,7 @@ routeBtn.addEventListener('click' , async () => {
     console.log(current.length)
     console.log(destination.length)
 
+    // Making use of async and await in parallel
     let [currentArr, destinationArr] = await Promise.all([geoCode("postcode" , current), geoCode("postcode" , destination)])
 
     if(currentArr.length == 0){
