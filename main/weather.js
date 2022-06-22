@@ -6,9 +6,7 @@ let getWeatherData = async (templeCoord) => {
     
     let weather_endpoint = WEATHER_BASE_URL + `?lat=${templeCoord[0]}&lon=${templeCoord[1]}&appid=` + WEATHER_API_KEY + "&units=metric"
     let response = await axios.get(weather_endpoint)
-    // let icon_link = iconLink + 
     
-    // console.log(response.data)
     let status = response.data.weather[0].main
     let temperature = response.data.main.temp.toFixed(1)
     let min_temp = response.data.main.temp_min

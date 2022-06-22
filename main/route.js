@@ -41,16 +41,6 @@ let createEndErrorMsg = () => {
     styleFunction("pink" , "red" , "20px" , "5px" , "5px" , "10px" , temp)
 }
 
-let createSearchErrorMsg = () => {
-    let errorMessage = "Please enter a valid postal temple postal code"
-    let temp = document.createElement('p')
-    temp.innerHTML = errorMessage
-    temp.setAttribute("id","searchError")
-    // document.querySelector('#searchInput').appendChild(temp)
-    styleFunction("pink" , "red" , "20px" , "5px" , "5px" , "10px" , temp)
-    return temp
-}
-
 routeBtn.addEventListener('click' , async () => {
     
     removeRoute()
@@ -69,13 +59,27 @@ routeBtn.addEventListener('click' , async () => {
     let current = document.querySelector("#start").value
     let destination = document.querySelector("#end").value 
     
+    console.log(current.length)
+    console.log(destination.length)
+
     let [currentArr, destinationArr] = await Promise.all([geoCode("postcode" , current), geoCode("postcode" , destination)])
 
     if(currentArr.length == 0){
         validStartPostal = false
     }
+    else{
+        if(current.length !== 6){
+            validStartPostal = false
+        }
+    }
+
     if(destinationArr.length == 0){
         validEndPostal = false
+    }
+    else{
+        if(destination.length !== 6){
+            validEndPostal = false
+        }
     }
 
     if(validStartPostal == true){
@@ -91,56 +95,65 @@ routeBtn.addEventListener('click' , async () => {
     else{
         endErrorDisplay.style.display = "block"
     }
+
     
-    let currentLatLng = currentArr[0].center
-    let destinationLatLng = destinationArr[0].center
+    
+    let printRoute = () => {
+        let currentLatLng = currentArr[0].center
+        let destinationLatLng = destinationArr[0].center
 
-    let [c_lat , c_lng] = [currentLatLng[1] , currentLatLng[0]]
-    let [d_lat , d_lng] = [destinationLatLng[1] , destinationLatLng[0]]
+        let [c_lat , c_lng] = [currentLatLng[1] , currentLatLng[0]]
+        let [d_lat , d_lng] = [destinationLatLng[1] , destinationLatLng[0]]
 
-    routingControl = L.Routing.control({
-    position: 'topleft',
-    lineOptions: {
-        styles: [
-            {
-                color: 'blue',
-                opacity: 1,
-                weight: 7
-            }
-        ]
-    },
-    waypoints: [
-            L.latLng(c_lat, c_lng),
-            L.latLng(d_lat , d_lng)
-        ],
-        createMarker: function(i , start , n){
-            let marker_icon = null
-            
-            if(i == 0){
-                marker_icon = generateIcon("../images/start.png")
-                return L.marker(start.latLng, {
-                    draggable: true,
-                    bounceOnAdd: false,
-                    bounceOnAddOptions: {
-                        duration: 1000,
-                        height: 800,
-                    },
-                    icon: marker_icon // here pass the custom marker icon instance
-                });
-            }
-            else if(i == n - 1){
-                marker_icon = generateIcon("../images/finish.png")
-                return L.marker(start.latLng, {
-                    draggable: true,
-                    bounceOnAdd: false,
-                    bounceOnAddOptions: {
-                        duration: 1000,
-                        height: 800,
-                    },
-                    icon: marker_icon // here pass the custom marker icon instance
-                });
-            }
+        routingControl = L.Routing.control({
+        position: 'topleft',
+        lineOptions: {
+            styles: [
+                {
+                    color: 'blue',
+                    opacity: 1,
+                    weight: 7
+                }
+            ]
         },
-    })
-    routingControl.addTo(map)
+        waypoints: [
+                L.latLng(c_lat, c_lng),
+                L.latLng(d_lat , d_lng)
+            ],
+            createMarker: function(i , start , n){
+                let marker_icon = null
+                
+                if(i == 0){
+                    marker_icon = generateIcon("../images/start.png")
+                    return L.marker(start.latLng, {
+                        draggable: true,
+                        bounceOnAdd: false,
+                        bounceOnAddOptions: {
+                            duration: 1000,
+                            height: 800,
+                        },
+                        icon: marker_icon // here pass the custom marker icon instance
+                    });
+                }
+                else if(i == n - 1){
+                    marker_icon = generateIcon("../images/finish.png")
+                    return L.marker(start.latLng, {
+                        draggable: true,
+                        bounceOnAdd: false,
+                        bounceOnAddOptions: {
+                            duration: 1000,
+                            height: 800,
+                        },
+                        icon: marker_icon // here pass the custom marker icon instance
+                    });
+                }
+            },
+        })
+        routingControl.addTo(map)
+    }
+
+    if(validStartPostal && validEndPostal){
+        printRoute()
+    }
+    
 })
