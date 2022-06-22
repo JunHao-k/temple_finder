@@ -67,7 +67,7 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./map.html">Temples</a>
+            <a class="nav-link" href="./map.html">Find Temples</a>
           </li>
           <li class="social-link d-none d-xl-block">
             <a class="nav-link" href="https://www.facebook.com/" target="_blank"><i
@@ -202,7 +202,7 @@
             <!--Grid column-->
             <div class="col-md-5 col-12">
               <!-- Email input -->
-              <div class="form-outline form-white mb-4">
+              <div class="form-outline form-white mb-4" id = "email">
                 <input type="email" id="form5Example2" class="form-control" placeholder="username@email.com" />
                 <label class="form-label" for="form5Example2">
                 </label>
@@ -264,21 +264,7 @@
   <!-- <script src = "./main/geocoding.js"></script>
   <script src = "./main/route.js"></script> -->
 
-  <script>
-    let cardSelector = document.querySelectorAll(".card")
-    let latlngRecords = [[1.284284, 103.849579] , [1.300891 , 103.852837] , [1.280916 , 103.847626]]
-
-    for(i = 0; i < cardSelector.length; i++){
-      let lat = latlngRecords[i][0]
-      let lng = latlngRecords[i][1]
-    
-      cardSelector[i].addEventListener("click", () => {
-        queryStr = `?lat=${lat}&lng=${lng}`
-        location.href = "./map.html" + queryStr
-        console.log(location.href)
-      })
-    }
-  </script>
+  <script src = "index.js"></script>
     
   
 </body>

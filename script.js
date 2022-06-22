@@ -40,9 +40,7 @@ window.addEventListener('DOMContentLoaded' , async () => {
             recordedMrtLayers = []
         }
     })
-
-
-
+    
     L.control.layers(baseLayers , overlays).addTo(map)
 })
 
