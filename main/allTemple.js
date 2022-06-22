@@ -51,7 +51,7 @@ let showAllTemples = async () => {
             L.circle(templeCoordinates , {
                 radius: 4000,
                 color: "yellow"
-            }).addTo(yellowCircle)
+            }).addTo(yellowCircle).addTo(map)
 
         }) 
         

@@ -1,5 +1,5 @@
 # Temple Finder: Showing chinese temple locations in Singapore
-Access live demo site [here](https://inthereddot.netlify.app/)
+Access live demo site [here](https://sg-temple-locate.netlify.app/)
 
 ## Overview
 
@@ -128,34 +128,17 @@ Test Cases can be found [here](/readme/test_cases.xlsx)
 
 ### Other Attributions
 1. [Paul Chor](https://github.com/kunxin-chor) for all his guidance and using his tutorials as references for the codes 
-2. [Singapore Map Vectors by seabranddesign, downloaded from Vecteezy](https://www.vecteezy.com/vector-art/145837-free-singapore-map-vectors) for the main logo image used for the site
-3. [Annie Spratt](https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) for background image used in Find Out More
-4. [Choropleth Map Tutorial](https://leafletjs.com/examples/choropleth/) for the styling of Population Density over Singapore region
-5. [Color Brewer](https://colorbrewer2.org/#type=sequential&scheme=YlOrRd&n=9) for Cartography colors of Population Density
-6. [ColorMind](http://colormind.io/) for generating colors used in charts
-7. [Coolors](https://coolors.co/462255-313b72-62a87c-7ee081-c3f3c0) for matching the red used in Singapore's flag
+2. [List of Singapore temples](http://www.beokeng.com/list.php) for obtaining the list of temple location from its page source
+3. [Unsplash](https://unsplash.com/s/photos/chinese-temples) for background image used in main page
+4. [Coolors](https://coolors.co/80deea-ffc0cb-afe1af-adb5bd-f5f5dc-1b1b1b) for the colour theme explanation used in this readme file
 
 ---
 
 ## Build and Deployment
 
-### Build
-The project uses [npm @node-minify](https://www.npmjs.com/package/node-minify) to minify JS and CSS files included in the HTML and [npm compress-images](https://www.npmjs.com/package/compress-images) to compress images for web use.
-
-Prerequisites:
-- [node and npm](https://nodejs.org/en/download/) is installed
-- @node-minfy/core, @node-minify/uglify-es, and @node-minify/clean-css packages are installed
-- compress-images and dependencies are installed
-
-Any changes to images, JS and CSS under the _src_ folder will require the following step to re-build:
-
-At project root folder, run 
-```
-node compress.js
-```
 
 ### Deployment
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a4606763-89a7-4619-84aa-9e41d6d444e7/deploy-status)](https://app.netlify.com/sites/inthereddot/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a4606763-89a7-4619-84aa-9e41d6d444e7/deploy-status)](https://app.netlify.com/sites/sg-temple-locate/deploys)
 
 The web app is hosted using [Netlify](https://www.netlify.com/).
 
@@ -165,12 +148,11 @@ Prerequisites:
 - Netlify is connected to GitHub repository via "New site from Git"
 - "GitHub"  has been selected for continuous deployment
 
-Steps to publish[^2]:
+Steps to publish[^1]:
 1. Go to Netlify and select the team that site has been set up with
 2. Browse to the site that needs to be published
 3. Go to Deploys and select the deployment to be published
 
 ---
 
-[^1]: Singapore Flag colors information is based [here](https://flagcolor.com/singapore-flag-colors/)
-[^2]: Steps are only required when auto-publishing is disabled
+[^1]: Steps are only required when auto-publishing is disabled
