@@ -1,4 +1,4 @@
-# Temple Finder: Showing 350 chinese temple locations in Singapore
+# Temple Finder: Showing chinese temple locations in Singapore
 Access live demo site [here](https://inthereddot.netlify.app/)
 
 ## Overview
