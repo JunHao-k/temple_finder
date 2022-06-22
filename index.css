@@ -3,24 +3,7 @@
     .nav-link {
       text-align: center;
     }
-    #jumba_text{
-      position: relative;
-      /* top: 20px; */
-      left: 100px;
-      bottom: 20px;
-    } 
-    h1.display-4{
-      font-size: 55px;
-      position: relative;
-    }
-    h2.heading2{
-      font-size: 55px;
-      
-    }
-    h4.heading4{
-      font-size: 17px;
-      
-    }
+
   } 
   
   /* small screen 576 */
@@ -28,50 +11,19 @@
     .nav-link {
       text-align: center;
     }
-    #jumba_text{
-      position: relative;
-      /* top: 20px; */
-      left: 100px; 
-      bottom: 20px;
-    } 
-    h1.display-4{
-      font-size: 55px;
-    }
-    h2.heading2{
-      font-size: 55px;
-    }
-    h4.heading4{
-      font-size: 17px;
-    } 
+
   }
      
   
   /* medium screen 768 */
   @media screen and (min-width: 768px) {
-    h1.display-4{
-      font-size: 110px;
-    }
-    h2.heading2{
-      font-size: 110px;
-    }
-    h4.heading4{
-      font-size: 20px;
-    } 
 
 
   }
   
   /* large screen 992 */
   @media screen and (min-width: 992px) {
-    h1.display-4{
-      font-size: 126px;
-    }
-    h2.heading2{
-      font-size: 126px;
-    }
-    h4.heading4{
-      font-size: 20px;
-    } 
+
   }
 
 

@@ -84,7 +84,7 @@ Font awesome icons are also used to denote social media platforms, map markers a
 ---
 
 ## Testing
-Test Cases can be found [here](/readme/test_cases.xlsx)
+Test Cases can be found [here](./testcase/testcases.pdf)
 
 ---
 

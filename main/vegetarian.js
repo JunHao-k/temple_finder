@@ -56,7 +56,6 @@ let findVegetarian = async (coorArr) => {
             minWidth: 400
         })
         thisVegRest.addTo(vegLayer)
-        // document.querySelector("#removal-container").style.display = "block"
     }
     recordedVegLayers.push(vegLayer)
 }

@@ -19,7 +19,6 @@ let removeRoute = () => {
 }
 let clearRoutebtn = document.querySelector("#clear-route")
 clearRoutebtn.addEventListener('click' , () => {
-    // alert("button clicked")
     removeRoute()
 })
 

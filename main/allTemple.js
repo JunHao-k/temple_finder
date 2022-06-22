@@ -1,5 +1,5 @@
 let showAllTemples = async () => {
-    let response = await axios.get('../data/templeList.json')
+    let response = await axios.get('../data/temple_list.json')
     let templeList = response.data
     
     let templeLayer = L.layerGroup()
@@ -63,7 +63,7 @@ let showAllTemples = async () => {
         let temple_popup_imgdiv = document.createElement('div')
         let popupImage = document.createElement('img')
         popupImage.setAttribute('class' , 'temple-popup-img')
-        popupImage.src = "../images/test2.jpg"
+        popupImage.src = "../images/temple_marker_pict.jpg"
         temple_popup_imgdiv.appendChild(popupImage)
         infoDiv.appendChild(temple_popup_imgdiv)
         popupDiv.appendChild(infoDiv)

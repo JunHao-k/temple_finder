@@ -12,32 +12,4 @@ for(i = 0; i < cardSelector.length; i++){
   })
 }
 
-// let styleFunction = (bgColor , fontColor , border_radius , margin , padding , htmlElement) => {
-//     htmlElement.style.backgroundColor = bgColor
-//     htmlElement.style.color = fontColor
-//     htmlElement.style.borderRadius = border_radius
-//     htmlElement.style.margin = margin
-//     htmlElement.style.padding = padding
-// }
-
-// let email = document.querySelector("#form5Example2").value
-// let isEmailError = false
-// let emailError = ""
-// let isErrorCreated = false;
-
-// emailError = "The email is invalid"
-// let temp = document.createElement('p')
-// temp.innerHTML = emailError
-// temp.setAttribute("id" , "emailErrorMsg")
-// document.querySelector('#email').appendChild(temp)
-// styleFunction("pink" , "red" , "20px" , "1em" , "1em" , temp)
-
-// if(email.includes('@') == false && email.includes('.') == false){
-//     isEmailError = true
-// }
-
-// if(isEmailError){
-//     document.querySelector('#emailErrorMsg').style.display = "block"
-// }
-
 
