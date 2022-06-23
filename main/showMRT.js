@@ -3,7 +3,7 @@ let recordedMrtLayers = []
 let showMrt = async (templeCoord) => {
 
     // Zoom out to show a bigger picture of surroundings
-    map.flyTo(templeCoord , 13)
+    // map.flyTo(templeCoord , 13)
     
     let response = await axios.get('../data/mrtsg.json')
     let mrtList = []
